@@ -12,7 +12,7 @@ public class EurekaServerApp {
         //李贤 
         //李思广 更新
         //黄学文 更新
-        //张可 更新
+        //张可 更新1111
         SpringApplication.run(EurekaServerApp.class,args);
     }
 }
