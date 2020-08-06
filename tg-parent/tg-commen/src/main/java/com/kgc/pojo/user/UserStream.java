@@ -4,18 +4,16 @@ import java.io.Serializable;
 
 public class UserStream implements Serializable {
     private Integer id;//流水编号
-    private Integer OrderId;//订单编号
-    private Double Monry;//
+    private Integer orderId;//订单编号
+    private Double monry;//
 
-    //无参
     public UserStream() {
     }
 
-    //有参
     public UserStream(Integer id, Integer orderId, Double monry) {
         this.id = id;
-        OrderId = orderId;
-        Monry = monry;
+        this.orderId = orderId;
+        this.monry = monry;
     }
 
     public Integer getId() {
@@ -27,18 +25,18 @@ public class UserStream implements Serializable {
     }
 
     public Integer getOrderId() {
-        return OrderId;
+        return orderId;
     }
 
     public void setOrderId(Integer orderId) {
-        OrderId = orderId;
+        this.orderId = orderId;
     }
 
     public Double getMonry() {
-        return Monry;
+        return monry;
     }
 
     public void setMonry(Double monry) {
-        Monry = monry;
+        this.monry = monry;
     }
 }

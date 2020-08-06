@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.UserStreamMapper">
+
+    <!--<select id="getAllUserStream" resultType="com.kgc.pojo.UserStream">
+        SELECT * FROM userstream
+        LIMIT ${index},${size}
+    </select>
+
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM userstream
+    </select>-->
+
+    <select id="getUserStreamById" resultType="com.kgc.pojo.user.UserStream">
+        SELECT * FROM userstream WHERE Id=#{Id}
+    </select>
+
+    <update id="update" parameterType="com.kgc.pojo.user.UserStream">
+        update userstream set orderId=#{orderId},money=#{money}
+        where id=#{Id}
+    </update>
+
+    <insert id="add" parameterType="com.kgc.pojo.user.UserStream">
+        insert into userstream values (null,#{orderId},#{money})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from userstream where Id=#{Id}
+    </delete>
+
+</mapper>  

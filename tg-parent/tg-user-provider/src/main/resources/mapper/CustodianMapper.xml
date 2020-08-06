@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.CustodianMapper">
+
+    <!--<select id="getAllCustodian" resultType="com.kgc.pojo.Custodian">
+        SELECT * FROM custodian
+        LIMIT ${index},${size}
+    </select>
+
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM custodian
+    </select>-->
+
+    <select id="getCustodianById" resultType="com.kgc.pojo.user.Custodian">
+        SELECT * FROM custodian WHERE custId=#{custId}
+    </select>
+
+    <update id="update" parameterType="com.kgc.pojo.user.Custodian">
+          UPDATE custodian SET custName=#{custName},PASSWORD=#{passWord},goodsInfo=#{goodsInfo}
+          where custId=#{custId}
+    </update>
+
+    <insert id="add" parameterType="com.kgc.pojo.user.Custodian">
+        INSERT INTO custodian VALUES (NULL,#{custName},#{passWord},DEFAULT,DEFAULT,DEFAULT,DEFAULT);
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from custodian where custId=#{custId}
+    </delete>
+
+
+</mapper>  
