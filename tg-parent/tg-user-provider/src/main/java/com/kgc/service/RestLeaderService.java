@@ -35,9 +35,8 @@ public class RestLeaderService {
         return leaderMapper.update(leader);
     }
 
-    //业务有错
     @RequestMapping("/leaderadd")
-    public int add( Leader leader){
+    public int add(@RequestBody Leader leader){
         return leaderMapper.add(leader);
     }
 
