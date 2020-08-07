@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="goods.mapper.Goodsmapper">
+    <!--<resultMap id="Goodsmap" type="goods.pojo.Goods">-->
+        <!--<id column="goodsid" property="goodsid"></id>-->
+        <!--<result column="goodsname" property="goodsname"></result>-->
+        <!--<result column="TYPE" property="TYPE"></result>-->
+        <!--<result column="price" property="price"></result>-->
+        <!--<result column="stock" property="stock"></result>-->
+        <!--<result column="beizhu" property="beizhu"></result>-->
+        <!--<result column="cateid" property="cateid"></result>-->
+        <!--<result column="moneyrate" property="moneyrate"></result>-->
+        <!--<association property="category" javaType="goods.pojo.Category">-->
+
+            <!--<id column="cateid" property="id"></id>-->
+            <!--<result column="TYPE" property="TYPE"></result>-->
+        <!--</association>-->
+    <!--</resultMap>-->
+
+    <!--<select id="getAllGoods" resultMap="Goodsmapper">-->
+        <!--select goods.*,TYPE-->
+        <!--from category INNER JOIN goods-->
+        <!--ON category.categoryid=goods.cateid-->
+        <!--<where>-->
+            <!--<if test="cateid!=null and cateid!=-1">-->
+                <!--and cateid=#{cateid}-->
+            <!--</if>-->
+            <!--<if test="TYPE!=null and TYPE!=''">-->
+                <!--and title like concat('%',#{TYPE},'%')-->
+            <!--</if>-->
+
+        <!--</where>-->
+        <!--order by goodsid-->
+        <!--LIMIT ${start},${size }-->
+    <!--</select>-->
+
+    <!--<select id="count" resultMap="int">-->
+        <!--select count(*)-->
+        <!--from goods-->
+        <!--<where>-->
+            <!--<if test="cateid!=null and cateid!=-1">-->
+                <!--and cateid=#{cateid}-->
+            <!--</if>-->
+            <!--<if test="TYPE!=null and TYPE!=''">-->
+                <!--and title like concat('%',#{TYPE},'%')-->
+            <!--</if>-->
+
+        <!--</where>-->
+    <!--</select>-->
+
+    <select id="getGoodsByType" resultType="com.kgc.pojo.goods.Goods">
+        select * from goods
+        where TYPE=#{TYPE}
+    </select>
+
+    <select id="getPersonById" resultType="com.kgc.pojo.goods.Goods">
+        select * from goods
+        where goodsid=#{goodsid}
+    </select>
+
+    <insert id="goodsAdd" parameterType="com.kgc.pojo.goods.Goods">
+        insert into goods values(null,#{goodsname},#{TYPE},#{price},#{stock},
+        #{beizhu},#{cateid},#{moneyrate})
+    </insert>
+
+
+    <delete id="goodsDelete" parameterType="int">
+        delete from goods
+        where goodsid=#{goodsid}
+    </delete>
+
+    <update id="goodsUpdate" parameterType="com.kgc.pojo.goods.Goods">
+        update goods
+        set goodsname=#{goodsname},TYPE=#{TYPE},price=#{price},stock=#{stock},
+        beizhu=#{beizhu},cateid=#{cateid},moneyrate=#{moneyrate}
+        where goodsid=#{goodsid}
+    </update>
+</mapper>  
