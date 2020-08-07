@@ -7,31 +7,31 @@ import java.io.Serializable;
  */
 public class Leader_messtype implements Serializable {
     //分类id
-    private Integer id;
+    private Integer typeId;
     //分类名
-    private String type;
+    private String typeName;
 
     public Leader_messtype() {
     }
 
-    public Leader_messtype(Integer id, String type) {
-        this.id = id;
-        this.type = type;
+    public Leader_messtype(Integer typeId, String typeName) {
+        this.typeId = typeId;
+        this.typeName = typeName;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getTypeId() {
+        return typeId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setTypeId(Integer typeId) {
+        this.typeId = typeId;
     }
 
-    public String getType() {
-        return type;
+    public String getTypeName() {
+        return typeName;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
     }
 }

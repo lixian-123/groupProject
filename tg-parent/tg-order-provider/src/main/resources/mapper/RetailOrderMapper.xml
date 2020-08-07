@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.RetailOrderMapper">
+    <select id="getAllRetail" resultType="com.kgc.pojo.order.RetailOrder">
+        select * from retailorder where userid=#{userId} and leaderId=#{leaderId}
+    </select>
+    <insert id="add" parameterType="com.kgc.pojo.order.RetailOrder">
+        insert into retailorder values(null,#{leaderId},#{userId},#{goodsId},#{goodsNumber},#{sumMoney},#{orderTime},#{orderState},
+        #{endPayTime},#{orderType})
+    </insert>
+    <update id="update" parameterType="com.kgc.pojo.order.RetailOrder">
+        update retailorder set leaderId=#{leaderId},userId=#{userId},goodsId=#{goodsId},goodsNumber=#{goodsNumber},sumMoney=#{sumMoney},orderTime=#{orderTime},orderState=#{orderState},
+        endPayTime=#{endPayTime},orderType=#{orderType} where retailId=#{retailId}
+    </update>
+</mapper>

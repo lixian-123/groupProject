@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.TeamOrderMapper">
+    <select id="getAllTeam" resultType="com.kgc.pojo.order.TeamOrder">
+        select * from teamorder where leaderId=#{leaderId}
+    </select>
+    <insert id="add" parameterType="com.kgc.pojo.order.TeamOrder">
+        insert into teamorder values(null,#{goodsId},#{leaderId},#{orderType},#{goodsNumber},#{quota})
+    </insert>
+    <update id="update" parameterType="com.kgc.pojo.order.TeamOrder">
+        update teamorder set goodsId=#{goodsId},leaderId=#{leaderId},orderType=#{orderType},goodsNumber=#{goodsNumber},quota=#{quota} where teamId=#{teamId}
+    </update>
+    <delete id="delete" parameterType="int">
+        delete * from teamorder where teamId=#{teamId}
+    </delete>
+</mapper>
