@@ -12,12 +12,12 @@
     </select>-->
 
     <select id="getUserStreamById" resultType="com.kgc.pojo.user.UserStream">
-        SELECT * FROM userstream WHERE Id=#{Id}
+        SELECT * FROM userstream WHERE id=#{id}
     </select>
 
     <update id="update" parameterType="com.kgc.pojo.user.UserStream">
         update userstream set orderId=#{orderId},money=#{money}
-        where id=#{Id}
+        where id=#{id}
     </update>
 
     <insert id="add" parameterType="com.kgc.pojo.user.UserStream">
@@ -25,7 +25,7 @@
     </insert>
 
     <delete id="delete" parameterType="int">
-        delete from userstream where Id=#{Id}
+        delete from userstream where id=#{id}
     </delete>
 
 </mapper>  

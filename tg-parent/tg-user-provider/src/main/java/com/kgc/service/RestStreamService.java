@@ -17,12 +17,12 @@ public class RestStreamService {
     }
 
     @PostMapping("/streamupdate")
-    public int update( UserStream userStream){
+    public int update(@RequestBody UserStream userStream){
         return userStreamMapper.update(userStream);
     }
 
     @PostMapping("/stramadd")
-    public int add( UserStream userStream){
+    public int add(@RequestBody UserStream userStream){
         return userStreamMapper.add(userStream);
     }
 

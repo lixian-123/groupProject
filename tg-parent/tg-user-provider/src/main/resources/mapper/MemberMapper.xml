@@ -22,7 +22,7 @@
     <update id="update" parameterType="com.kgc.pojo.user.Member">
           UPDATE member SET
           nickname=#{nickname},`PassWord`=#{passWord},userName=#{userName},userAge=#{userAge},userAddress=#{userAddress},userPhone=#{userPhone},card=#{card},cloenelId=#{cloenelId}
-          where UserId=#{UserId}
+          where userId=#{userId}
     </update>
 
     <insert id="add" parameterType="com.kgc.pojo.user.Member">

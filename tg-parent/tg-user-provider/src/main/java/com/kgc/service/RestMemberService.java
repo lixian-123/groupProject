@@ -18,9 +18,9 @@ public class RestMemberService {
     public Member getLogin(@RequestParam Map<String,Object> param){
         Map<String,Object> map=new HashMap<>();
         String nickname=param.get("nickname").toString();
-        String PassWord=param.get("PassWord").toString();
+        String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
-        map.put("PassWord",PassWord);
+        map.put("passWord",passWord);
         return memberMapper.MemberLogin(map);
     }
 
@@ -30,14 +30,12 @@ public class RestMemberService {
     }
 
     @RequestMapping("/memberupdate")
-    public int update( Member member){
-        System.out.println(member.getPassWord());
+    public int update(@RequestBody Member member){
         return memberMapper.update(member);
     }
 
     @RequestMapping("/memberadd")
     public int add(@RequestBody Member member){
-        System.out.println(member.getPassWord());
         return memberMapper.add(member);
     }
 

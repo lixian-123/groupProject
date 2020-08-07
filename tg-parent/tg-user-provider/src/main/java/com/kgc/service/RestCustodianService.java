@@ -18,12 +18,12 @@ public class RestCustodianService {
     }
 
     @PostMapping("/custoupdate")
-    public int update( Custodian custodian){
+    public int update(@RequestBody Custodian custodian){
         return custodianMapper.update(custodian);
     }
 
     @PostMapping("/custoadd")
-    public int add( Custodian custodian){
+    public int add(@RequestBody Custodian custodian){
         return custodianMapper.add(custodian);
     }
 
