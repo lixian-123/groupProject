@@ -1,8 +1,7 @@
-package com.kgc.service;
+package com.kgc.controller;
 
-import com.kgc.mapper.Leader_saleMapper;
 import com.kgc.pojo.leader.Leader_sale;
-import org.apache.ibatis.annotations.Param;
+import com.kgc.service.LeaderSaleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,19 +12,19 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-public class RestLeaderSale {
+public class LeaderSaleController {
     @Autowired
-    Leader_saleMapper saleMapper;
+    LeaderSaleService saleService;
     @RequestMapping("showLeaderSale")
     public List<Leader_sale> getAllSale(@RequestParam Map<String,Object> map){
-        return saleMapper.getAllSale(map);
+        return saleService.getAllSale(map);
     }
     @RequestMapping("addLeaderSale")
     public int add(@RequestBody Leader_sale leader_sale){
-        return saleMapper.add(leader_sale);
+        return saleService.add(leader_sale);
     }
     @RequestMapping("updateLeaderSale")
     public int update(@RequestBody Leader_sale leader_sale){
-        return saleMapper.update(leader_sale);
+        return saleService.update(leader_sale);
     }
 }

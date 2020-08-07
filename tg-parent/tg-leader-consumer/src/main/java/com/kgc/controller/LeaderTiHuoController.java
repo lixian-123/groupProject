@@ -1,7 +1,7 @@
-package com.kgc.service;
+package com.kgc.controller;
 
-import com.kgc.mapper.Leader_tihuoMapper;
 import com.kgc.pojo.leader.Leader_tihuo;
+import com.kgc.service.LeaderTiHuoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,17 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class RestLeaderTiHuo {
+public class LeaderTiHuoController {
     @Autowired
-    Leader_tihuoMapper tihuoMapper;
-    //查询团长的所有提货记录
+    LeaderTiHuoService tiHuoService;
     @RequestMapping("/showLeaderTihuo")
     public List<Leader_tihuo> getAllTiHuo(@RequestParam("leaderId") Integer leaderId){
-        return tihuoMapper.getAllTiHuo(leaderId);
+        return tiHuoService.getAllTiHuo(leaderId);
     }
     //添加提货记录
     @RequestMapping("/addLeaderTihuo")
     public int add(@RequestBody Leader_tihuo leader_tihuo){
-        return tihuoMapper.add(leader_tihuo);
+        return tiHuoService.add(leader_tihuo);
     }
 }
