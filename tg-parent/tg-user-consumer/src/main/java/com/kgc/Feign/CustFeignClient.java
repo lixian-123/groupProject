@@ -1,5 +1,6 @@
 package com.kgc.Feign;
 
+import com.kgc.Feign.impl.CustFeignClientImpl;
 import com.kgc.pojo.user.Custodian;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "tg-user-provider",fallback = CustFeignClientImpl.class)
+@FeignClient(name ="tg-user-provider",fallback = CustFeignClientImpl.class)
 public interface CustFeignClient {
 
     @RequestMapping("/custoid/{id}")

@@ -1,10 +1,14 @@
-package com.kgc.Feign;
+package com.kgc.Feign.impl;
 
+import com.kgc.Feign.LeaderFeignClient;
 import com.kgc.pojo.user.Leader;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-public class LeaderFeignClientImpl implements LeaderFeignClient {
+@Component
+public class LeaderFeignClientImpl implements LeaderFeignClient  {
+
     @Override
     public Leader getleaderLogin(Map<String, Object> param) {
         return null;

@@ -9,7 +9,7 @@ import java.util.Map;
 
 public interface LeaderService {
 
-    public Leader getleaderLogin(@RequestParam Map<String,Object> param);
+    public Leader getleaderLogin(String nickname,String passWord);
 
     public Leader getLeaderById(@PathVariable("id") Integer id);
 

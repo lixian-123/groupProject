@@ -9,7 +9,7 @@ import java.util.Map;
 
 public interface MemberService {
 
-    public Member getLogin(@RequestParam Map<String,Object> param);
+    public Member getLogin(String nickname,String passWord);
 
     public Member getMemberById(@PathVariable("id") Integer id);
 

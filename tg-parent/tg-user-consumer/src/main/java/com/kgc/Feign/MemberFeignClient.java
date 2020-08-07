@@ -1,5 +1,6 @@
 package com.kgc.Feign;
 
+import com.kgc.Feign.impl.MemberFeignClientImpl;
 import com.kgc.pojo.user.Member;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

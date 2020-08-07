@@ -3,19 +3,20 @@
 <mapper namespace="com.kgc.mapper.ShopMapper">
 
     <select id="getShopById" resultType="com.kgc.pojo.shops.ShopCar">
-        SELECT * FROM shop WHERE ShopId=#{ShopId}
+        SELECT * FROM shop WHERE shopId=#{shopId}
     </select>
 
     <insert id="add" parameterType="com.kgc.pojo.shops.ShopCar">
-        INSERT INTO shop VALUES(NULL,#{UserId},#{GoodsId},#{GoodsNumber},NOW());
+        INSERT INTO shop VALUES(NULL,#{userId},#{goodsId},#{goodsNumber},NOW());
     </insert>
 
     <update id="update" parameterType="com.kgc.pojo.shops.ShopCar">
-        UPDATE shop SET UserId=#{UserId},GoodsId=#{GoodsId},GoodsNumber=#{GoodsNumber}
+        UPDATE shop SET userId=#{userId},goodsId=#{goodsId},goodsNumber=#{goodsNumber}
+        where shopId=#{shopId}
     </update>
 
     <delete id="delete" parameterType="int">
-        delete from shop where id=#{ShopId}
+        delete from shop where shopId=#{shopId}
     </delete>
 
 </mapper>  

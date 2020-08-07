@@ -6,6 +6,7 @@ import com.kgc.service.LeaderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -17,7 +18,10 @@ public class LeaderServiceImpl implements LeaderService {
 
 
     @Override
-    public Leader getleaderLogin(Map<String, Object> param) {
+    public Leader getleaderLogin(String nickname,String passWord) {
+        Map<String,Object> param=new HashMap<>();
+        param.put("nickname",nickname);
+        param.put("passWord",passWord);
         return leaderFeignClient.getleaderLogin(param);
     }
 

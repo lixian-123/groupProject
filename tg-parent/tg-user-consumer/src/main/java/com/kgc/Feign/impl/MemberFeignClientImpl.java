@@ -1,9 +1,12 @@
-package com.kgc.Feign;
+package com.kgc.Feign.impl;
 
+import com.kgc.Feign.MemberFeignClient;
 import com.kgc.pojo.user.Member;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
+@Component
 public class MemberFeignClientImpl implements MemberFeignClient {
     @Override
     public Member getLogin(Map<String, Object> param) {

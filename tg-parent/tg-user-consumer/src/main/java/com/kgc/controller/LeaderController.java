@@ -1,7 +1,7 @@
-package com.kgc.service;
+package com.kgc.controller;
 
-import com.kgc.mapper.LeaderMapper;
 import com.kgc.pojo.user.Leader;
+import com.kgc.service.LeaderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,43 +10,36 @@ import java.util.Map;
 
 @RestController
 @CrossOrigin
-public class RestLeaderService {
+public class LeaderController {
 
     @Autowired
-    private LeaderMapper leaderMapper;
+    private LeaderService leaderService;
+
 
     @RequestMapping("/leaderlogin")
-    public Leader getleaderLogin(@RequestParam Map<String,Object> param){
-        Map<String,Object> map=new HashMap<>();
-        String nickname=param.get("nickname").toString();
-        String passWord=param.get("passWord").toString();
-        map.put("nickname",nickname);
-        map.put("passWord",passWord);
-        return leaderMapper.LeaderLogin(map);
+    public Leader getleaderLogin(String nickname,String passWord){
+        return leaderService.getleaderLogin(nickname,passWord);
     }
 
     @RequestMapping("/leaderid/{id}")
     public Leader getLeaderById(@PathVariable("id") Integer id){
-        return leaderMapper.getLeaderById(id);
+        return leaderService.getLeaderById(id);
     }
 
     @RequestMapping("/leaderupdate")
     public int update( @RequestBody Leader leader){
-        return leaderMapper.update(leader);
+        return leaderService.update(leader);
     }
 
     @RequestMapping("/leaderadd")
     public int add(@RequestBody Leader leader){
-        return leaderMapper.add(leader);
+        return leaderService.add(leader);
     }
 
 
     @RequestMapping("/leaderdelete/{id}")
     public int delete(@PathVariable("id") Integer id){
-        return leaderMapper.delete(id);
+        return leaderService.delete(id);
     }
-
-
-
 
 }

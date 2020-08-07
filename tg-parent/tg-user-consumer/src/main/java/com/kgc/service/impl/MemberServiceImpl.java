@@ -6,6 +6,7 @@ import com.kgc.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -16,7 +17,10 @@ public class MemberServiceImpl implements MemberService {
     private MemberFeignClient memberFeignClient;
 
     @Override
-    public Member getLogin(Map<String, Object> param) {
+    public Member getLogin(String nickname,String passWord) {
+        Map<String,Object> param=new HashMap<>();
+        param.put("nickname",nickname);
+        param.put("passWord",passWord);
         return memberFeignClient.getLogin(param);
     }
 

@@ -1,7 +1,10 @@
-package com.kgc.Feign;
+package com.kgc.Feign.impl;
 
+import com.kgc.Feign.StreamFeignClient;
 import com.kgc.pojo.user.UserStream;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StreamFeignClientImpl implements StreamFeignClient {
     @Override
     public UserStream getMemberById(Integer id) {
