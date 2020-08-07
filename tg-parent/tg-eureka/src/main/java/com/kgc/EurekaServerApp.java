@@ -8,6 +8,7 @@ package com.kgc;
 @EnableEurekaServer
 public class EurekaServerApp {
     public static void main(String[] args) {
+        //lixian 8-7
         SpringApplication.run(EurekaServerApp.class,args);
     }
 }
