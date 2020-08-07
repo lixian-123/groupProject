@@ -8,12 +8,16 @@ import java.io.Serializable;
 public class Leader_sale implements Serializable {
     //业绩信息表id
     private Integer id;
+    //团长id
+    private Integer leaderId;
     //今日提成
     private double ticheng;
     //今日订单数
     private Integer dingdan;
-    //几日销售额
+    //今日销售额
     private double salemoney;
+    //今日日期
+    private String todayTime;
 
     public Leader_sale() {
     }
@@ -55,5 +59,21 @@ public class Leader_sale implements Serializable {
 
     public void setSalemoney(double salemoney) {
         this.salemoney = salemoney;
+    }
+
+    public Integer getLeaderId() {
+        return leaderId;
+    }
+
+    public void setLeaderId(Integer leaderId) {
+        this.leaderId = leaderId;
+    }
+
+    public String getTodayTime() {
+        return todayTime;
+    }
+
+    public void setTodayTime(String todayTime) {
+        this.todayTime = todayTime;
     }
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.OrderDetailMapper">
+    <select id="getAllDetail" resultType="com.kgc.pojo.order.OrderDetail">
+        select * from orderdetail where userid=#{userId} and leaderId=#{leaderId}
+    </select>
+    <insert id="add" parameterType="com.kgc.pojo.order.OrderDetail">
+        insert into orderdetail values(null,#{userId},#{leaderId},#{goodsId},#{goodsNumber},#{sumMoney},#{orderTime},#{orderState},
+        #{endPayTime},#{orderType})
+    </insert>
+    <update id="update" parameterType="com.kgc.pojo.order.OrderDetail">
+        update orderdetail set userId=#{userId},leaderId=#{leaderId},goodsId=#{goodsId},goodsNumber=#{goodsNumber},sumMoney=#{sumMoney},orderTime=#{orderTime},orderState=#{orderState},
+        endPayTime=#{endPayTime},orderType=#{orderType} where orderid=#{orderId}
+    </update>
+</mapper>

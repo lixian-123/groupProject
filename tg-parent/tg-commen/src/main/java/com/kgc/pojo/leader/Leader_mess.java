@@ -10,6 +10,8 @@ public class Leader_mess implements Serializable {
     private Integer id;
     //消息内容
     private String mess;
+    //消息类型id
+    private Integer messTypeId;
 
     public Leader_mess() {
     }
@@ -33,5 +35,13 @@ public class Leader_mess implements Serializable {
 
     public void setMess(String mess) {
         this.mess = mess;
+    }
+
+    public Integer getMessTypeId() {
+        return messTypeId;
+    }
+
+    public void setMessTypeId(Integer messTypeId) {
+        this.messTypeId = messTypeId;
     }
 }

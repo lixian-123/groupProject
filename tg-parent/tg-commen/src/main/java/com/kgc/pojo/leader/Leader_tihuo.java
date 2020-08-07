@@ -8,18 +8,21 @@ import java.io.Serializable;
 public class Leader_tihuo implements Serializable {
     //提货订单id
     private Integer id;
+    //团长id
+    private Integer leaderId;
     //订单id
     private Integer orderId;
     //提货时间
-    private String tiem;
+    private String time;
 
     public Leader_tihuo() {
     }
 
-    public Leader_tihuo(Integer id, Integer orderId, String tiem) {
+    public Leader_tihuo(Integer id, Integer orderId, String time,Integer leaderId) {
         this.id = id;
         this.orderId = orderId;
-        this.tiem = tiem;
+        this.time = time;
+        this.leaderId=leaderId;
     }
 
     public Integer getId() {
@@ -38,11 +41,19 @@ public class Leader_tihuo implements Serializable {
         this.orderId = orderId;
     }
 
-    public String getTiem() {
-        return tiem;
+    public String getTime() {
+        return time;
     }
 
-    public void setTiem(String tiem) {
-        this.tiem = tiem;
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public Integer getLeaderId() {
+        return leaderId;
+    }
+
+    public void setLeaderId(Integer leaderId) {
+        this.leaderId = leaderId;
     }
 }
