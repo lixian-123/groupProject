@@ -11,7 +11,7 @@ public class OrderDetail {
     private Integer goodsNumber;// I购买数量
     private Double sumMoney;// 总金额
     private String orderTime;// 下单时间
-    private Integer orderState;// 订单状态
+    private Integer orderState;// 订单状态{}
     private String endPayTime;// 付款时间
     private Integer orderType;// 团购类型
 
