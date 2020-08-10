@@ -12,6 +12,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 public class MyShopcartConsumerApp {
 
     public static void main(String[] args) {
+        //mnb
         SpringApplication.run(MyShopcartConsumerApp.class, args);
     }
 
