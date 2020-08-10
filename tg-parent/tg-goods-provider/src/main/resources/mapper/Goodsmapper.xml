@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="goods.mapper.Goodsmapper">
+<mapper namespace="com.kgc.goods.mapper.Goodsmapper">
     <!--<resultMap id="Goodsmap" type="goods.pojo.Goods">-->
         <!--<id column="goodsid" property="goodsid"></id>-->
         <!--<result column="goodsname" property="goodsname"></result>-->

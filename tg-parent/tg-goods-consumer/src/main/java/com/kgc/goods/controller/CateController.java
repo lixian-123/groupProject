@@ -1,25 +1,23 @@
-package goods.service;
+package com.kgc.goods.controller;
 
+import com.kgc.goods.service.Categoryservice;
 import com.kgc.pojo.goods.Category;
-import goods.mapper.Categorymapper;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
-public class RestCategoryservice {
+public class CateController {
 
     @Autowired
-    private Categorymapper categorymapper;
-
+    private Categoryservice categoryservice;
 
     @RequestMapping("/getAllCate")
     public List<Category> getAllCate(){
-        return categorymapper.getAllCate();
+        return categoryservice.getAllCate();
     }
+
+
 }

@@ -1,16 +1,12 @@
-package goods.service;
+package com.kgc.goods.service;
 
 import com.kgc.pojo.goods.Goods;
-import goods.mapper.Goodsmapper;
+import com.kgc.goods.mapper.Goodsmapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-import java.util.Map;
 
 @RestController
 public class RestGoodsservice {
