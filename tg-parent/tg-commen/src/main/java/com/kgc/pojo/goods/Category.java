@@ -2,12 +2,14 @@ package com.kgc.pojo.goods;
 
 public class Category {
     private int categoryid;//  序号
-    private String TYPE;//  商品种类
+    private String type;//  商品种类
 
-    public Category(){}
-    public Category(int categoryid, String TYPE) {
+    public Category() {
+    }
+
+    public Category(int categoryid, String type) {
         this.categoryid = categoryid;
-        this.TYPE = TYPE;
+        this.type = type;
     }
 
     public int getCategoryid() {
@@ -18,11 +20,11 @@ public class Category {
         this.categoryid = categoryid;
     }
 
-    public String getTYPE() {
-        return TYPE;
+    public String getType() {
+        return type;
     }
 
-    public void setTYPE(String TYPE) {
-        this.TYPE = TYPE;
+    public void setType(String type) {
+        this.type = type;
     }
 }

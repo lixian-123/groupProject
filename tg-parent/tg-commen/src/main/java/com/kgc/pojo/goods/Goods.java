@@ -3,7 +3,7 @@ package com.kgc.pojo.goods;
 public class Goods {
     private int goodsid;// 商品表id
     private String goodsname;// 商品名
-    private String TYPE;// 商品种类
+    private String type;// 商品种类
     private int price;// 单价
     private int stock;// 库存
     private String beizhu;// 备注
@@ -11,19 +11,19 @@ public class Goods {
     private double moneyrate ;//每件商品给团长的利润
     private Category category;
 
-    public Goods(){}
-    public Goods(int goodsid, String goodsname, String TYPE, int price, int stock, String beizhu, Integer cateid, Category category,
-        double moneyrate
-    ) {
+    public Goods() {
+    }
+
+    public Goods(int goodsid, String goodsname, String type, int price, int stock, String beizhu, Integer cateid, double moneyrate, Category category) {
         this.goodsid = goodsid;
         this.goodsname = goodsname;
-        this.TYPE = TYPE;
+        this.type = type;
         this.price = price;
         this.stock = stock;
         this.beizhu = beizhu;
         this.cateid = cateid;
+        this.moneyrate = moneyrate;
         this.category = category;
-        this.moneyrate=moneyrate;
     }
 
     public int getGoodsid() {
@@ -42,12 +42,12 @@ public class Goods {
         this.goodsname = goodsname;
     }
 
-    public String getTYPE() {
-        return TYPE;
+    public String getType() {
+        return type;
     }
 
-    public void setTYPE(String TYPE) {
-        this.TYPE = TYPE;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getPrice() {
@@ -82,19 +82,19 @@ public class Goods {
         this.cateid = cateid;
     }
 
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
     public double getMoneyrate() {
         return moneyrate;
     }
 
     public void setMoneyrate(double moneyrate) {
         this.moneyrate = moneyrate;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
