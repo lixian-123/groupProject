@@ -1,18 +1,11 @@
-package goods.mapper;
+package com.kgc.goods.service;
 
 import com.kgc.pojo.goods.Goods;
 
-import org.apache.ibatis.annotations.Mapper;
-
-import java.util.List;
-import java.util.Map;
-
-@Mapper
-public interface Goodsmapper {
-
+public interface Goodsservice {
     //分页查询
-//    public List<Goods> getAllGoods(Map<String, Object> parma);
-//    public int count(Map<String, Object> param);
+//    public PageUtil<Goods> getPage(Integer cateid ,String goodsname ,Integer index,Integer size);
+
 
     //根据商品分类查询
     public Goods getGoodsByType(String type);

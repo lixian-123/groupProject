@@ -1,4 +1,4 @@
-package goods.feign;
+package com.kgc.goods.feign;
 
 
 import com.kgc.pojo.goods.Category;

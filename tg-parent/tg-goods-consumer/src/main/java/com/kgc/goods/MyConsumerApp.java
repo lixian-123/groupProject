@@ -1,16 +1,18 @@
-package goods;
+package com.kgc.goods;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 
 @SpringBootApplication
 @EnableEurekaClient
-public class MyProviderApp {
+@EnableFeignClients
+public class MyConsumerApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyProviderApp.class, args);
+        SpringApplication.run(MyConsumerApp.class, args);
     }
 
 }

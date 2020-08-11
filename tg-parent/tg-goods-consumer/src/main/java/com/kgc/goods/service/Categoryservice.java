@@ -1,13 +1,10 @@
-package goods.mapper;
-
+package com.kgc.goods.service;
 
 import com.kgc.pojo.goods.Category;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
-@Mapper
-public interface Categorymapper {
+public interface Categoryservice {
     //查询所有商品类别
     public List<Category> getAllCate();
 }
