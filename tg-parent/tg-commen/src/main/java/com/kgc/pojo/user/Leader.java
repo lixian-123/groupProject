@@ -3,39 +3,41 @@ package com.kgc.pojo.user;
 import java.io.Serializable;
 
 public class Leader implements Serializable {
-    private Integer LeaderId;//团长编号
+    private Integer leaderId;//团长编号
     private String nickname;//昵称
-    private String PassWord;//密码
-    private String LeaaderName ;//团长姓名
-    private Integer LeaderAge ;//年龄
-    private String LeaderAddress ;//住址
-    private String LeaderPhone ;//手机号
-    private String Card;//身份证
-    private String LeaderArea ;//负责区域
+    private String passWord;//密码
+    private String leaderName ;//团长姓名
+    private Integer leaderAge ;//年龄
+    private String leaderAddress ;//住址
+    private String leaderPhone ;//手机号
+    private String card;//身份证
+    private String leaderArea ;//负责区域
 
     //无参
     public Leader() {
     }
 
     //有参
-    public Leader(Integer leaderId, String nickname, String passWord, String leaaderName, Integer leaderAge, String leaderAddress, String leaderPhone, String card, String leaderArea) {
-        LeaderId = leaderId;
+
+
+    public Leader(Integer leaderId, String nickname, String passWord, String leaderName, Integer leaderAge, String leaderAddress, String leaderPhone, String card, String leaderArea) {
+        this.leaderId = leaderId;
         this.nickname = nickname;
-        PassWord = passWord;
-        LeaaderName = leaaderName;
-        LeaderAge = leaderAge;
-        LeaderAddress = leaderAddress;
-        LeaderPhone = leaderPhone;
-        Card = card;
-        LeaderArea = leaderArea;
+        this.passWord = passWord;
+        this.leaderName = leaderName;
+        this.leaderAge = leaderAge;
+        this.leaderAddress = leaderAddress;
+        this.leaderPhone = leaderPhone;
+        this.card = card;
+        this.leaderArea = leaderArea;
     }
 
     public Integer getLeaderId() {
-        return LeaderId;
+        return leaderId;
     }
 
     public void setLeaderId(Integer leaderId) {
-        LeaderId = leaderId;
+        this.leaderId = leaderId;
     }
 
     public String getNickname() {
@@ -47,58 +49,58 @@ public class Leader implements Serializable {
     }
 
     public String getPassWord() {
-        return PassWord;
+        return passWord;
     }
 
     public void setPassWord(String passWord) {
-        PassWord = passWord;
+        this.passWord = passWord;
     }
 
-    public String getLeaaderName() {
-        return LeaaderName;
+    public String getLeaderName() {
+        return leaderName;
     }
 
-    public void setLeaaderName(String leaaderName) {
-        LeaaderName = leaaderName;
+    public void setLeaderName(String leaderName) {
+        this.leaderName = leaderName;
     }
 
     public Integer getLeaderAge() {
-        return LeaderAge;
+        return leaderAge;
     }
 
     public void setLeaderAge(Integer leaderAge) {
-        LeaderAge = leaderAge;
+        this.leaderAge = leaderAge;
     }
 
     public String getLeaderAddress() {
-        return LeaderAddress;
+        return leaderAddress;
     }
 
     public void setLeaderAddress(String leaderAddress) {
-        LeaderAddress = leaderAddress;
+        this.leaderAddress = leaderAddress;
     }
 
     public String getLeaderPhone() {
-        return LeaderPhone;
+        return leaderPhone;
     }
 
     public void setLeaderPhone(String leaderPhone) {
-        LeaderPhone = leaderPhone;
+        this.leaderPhone = leaderPhone;
     }
 
     public String getCard() {
-        return Card;
+        return card;
     }
 
     public void setCard(String card) {
-        Card = card;
+        this.card = card;
     }
 
     public String getLeaderArea() {
-        return LeaderArea;
+        return leaderArea;
     }
 
     public void setLeaderArea(String leaderArea) {
-        LeaderArea = leaderArea;
+        this.leaderArea = leaderArea;
     }
 }
