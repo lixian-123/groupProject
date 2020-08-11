@@ -11,6 +11,7 @@ public interface MemberMapper {
     //public List<Member> getAllMember(Map<String, Object> param);
     //public int getCount(Map<String, Object> param);
 
+    //会员模块
     //登陆
     public Member MemberLogin(Map<String,Object> param);
 

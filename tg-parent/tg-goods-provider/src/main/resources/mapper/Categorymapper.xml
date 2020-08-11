@@ -7,3 +7,10 @@
     </select>
 
 </mapper>
+<mapper namespace="com.kgc.goods.mapper.Categorymapper">
+
+    <select id="getAllCate" resultType="com.kgc.pojo.goods.Category">
+
+        select * from category
+    </select>
+        </mapper>

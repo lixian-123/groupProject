@@ -19,9 +19,9 @@ public class RestLeaderService {
     public Leader getleaderLogin(@RequestParam Map<String,Object> param){
         Map<String,Object> map=new HashMap<>();
         String nickname=param.get("nickname").toString();
-        String PassWord=param.get("PassWord").toString();
+        String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
-        map.put("PassWord",PassWord);
+        map.put("passWord",passWord);
         return leaderMapper.LeaderLogin(map);
     }
 
@@ -35,9 +35,8 @@ public class RestLeaderService {
         return leaderMapper.update(leader);
     }
 
-    //业务有错
     @RequestMapping("/leaderadd")
-    public int add( Leader leader){
+    public int add(@RequestBody Leader leader){
         return leaderMapper.add(leader);
     }
 
