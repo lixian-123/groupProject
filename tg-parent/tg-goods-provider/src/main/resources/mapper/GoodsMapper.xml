@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.GoodsMapper">
+
+
+
+    <select id="getGoodByPage" resultType="com.kgc.pojo.goods.Goods">
+        SELECT * FROM goods 
+        <where>
+            <if test="goodsname !=null and goodsname !=''">
+                goodsname like concat('%',#{goodsname},'%')
+            </if>
+        </where>
+        LIMIT ${index},${size}
+    </select>
+
+    <select id="getCount" resultType="int">
+        SELECT count(*) FROM goods
+        <where>
+            <if test="goodsname !=null and goodsname !=''">
+                 goodsname like concat('%',#{goodsname},'%')
+            </if>
+        </where>
+    </select>
+
+
+    <select id="getGoodsById" resultType="com.kgc.pojo.goods.Goods">
+        SELECT * FROM goods WHERE goodsid=#{goodsId}
+    </select>
+
+    <insert id="insertGoods" parameterType="com.kgc.pojo.goods.Goods">
+        INSERT INTO goods
+        VALUES(NULL,#{goodsname},#{type},#{price},#{stock},#{beizhu},#{cateid},#{moneyrate})
+    </insert>
+
+    <update id="updateGoods" parameterType="com.kgc.pojo.goods.Goods">
+      UPDATE goods SET
+      goodsname=#{goodsname},
+      type=#{type},
+      price=#{price},
+      stock=#{stock},
+      beizhu=#{beizhu},
+      cateid=#{cateid},
+      moneyrate=#{moneyrate}
+      where goodsid=#{goodsid}
+    </update>
+
+
+</mapper>  

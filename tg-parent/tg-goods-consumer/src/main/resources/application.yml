@@ -2,7 +2,7 @@ server:
   port: 5002
 spring:
   application:
-    name: my-consumer
+    name: tg-goods-consumer
 eureka:
   client:
     service-url:
