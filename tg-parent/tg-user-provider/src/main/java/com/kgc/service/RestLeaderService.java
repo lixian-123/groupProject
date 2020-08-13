@@ -31,6 +31,7 @@ public class RestLeaderService {
         Leader leader =new Leader("lixian","123456");
         // JSONObject.toJSONString()
         redisTemplate.opsForValue().set("token888888", JSON.toJSONString(leader));
+
         return "success";
     }
 
