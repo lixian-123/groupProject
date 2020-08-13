@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-public class RestLeaderSale {
+public class RestLeaderSaleService {
     @Autowired
     Leader_saleMapper saleMapper;
     @RequestMapping("showLeaderSale")
