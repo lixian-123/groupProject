@@ -2,9 +2,14 @@ package com.kgc.service;
 
 import com.kgc.mapper.MemberMapper;
 import com.kgc.pojo.user.Member;
+import com.kgc.util.MD5;
+import nl.bitwalker.useragentutils.UserAgent;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +19,9 @@ public class RestMemberService {
     @Autowired
     private MemberMapper memberMapper;
 
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+
     @RequestMapping("/memberlogin")
     public Member getLogin(@RequestParam Map<String,Object> param){
         Map<String,Object> map=new HashMap<>();
@@ -21,6 +29,7 @@ public class RestMemberService {
         String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
         map.put("passWord",passWord);
+
         return memberMapper.MemberLogin(map);
     }
 
