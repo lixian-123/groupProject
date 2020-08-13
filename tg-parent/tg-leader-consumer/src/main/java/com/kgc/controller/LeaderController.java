@@ -15,6 +15,9 @@ public class LeaderController {
     LeaderService leaderService;
     @RequestMapping("/addTeam")
     public int addTeam(@RequestBody TeamOrder teamOrder){
-        return  leaderService.addTeam(teamOrder);
+        if(leaderService.saveTeamRedis(teamOrder)){
+            return  leaderService.addTeam(teamOrder);
+        }
+        return 0;
     }
 }
