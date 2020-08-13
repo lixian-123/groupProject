@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class RestLeaderMess {
+public class RestLeaderMessService {
     @Autowired
     Leader_messMapper messMapper;
     @RequestMapping("showLeaderMess")

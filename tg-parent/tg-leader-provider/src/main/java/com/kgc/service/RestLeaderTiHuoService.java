@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class RestLeaderTiHuo {
+public class RestLeaderTiHuoService {
     @Autowired
     Leader_tihuoMapper tihuoMapper;
     //查询团长的所有提货记录
