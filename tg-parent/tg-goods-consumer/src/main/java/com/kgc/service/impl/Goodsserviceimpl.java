@@ -1,47 +1,39 @@
 package com.kgc.service.impl;
 
-import com.kgc.feign.GoodsFeign;
-import com.kgc.service.Goodsservice;
+import com.kgc.feign.GoodsFeignClient;
 import com.kgc.pojo.goods.Goods;
+import com.kgc.service.GoodsService;
 import com.kgc.util.PageUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
-public class Goodsserviceimpl implements Goodsservice{
-    @Autowired
-    private GoodsFeign goodsFeign;
-
-
+public class GoodsServiceImpl implements GoodsService {
+    //调用 feign
+    private GoodsFeignClient goodsFeignClient;
     @Override
-    public PageUtil<Goods> getPage(Integer cateid, String goodsname, Integer index, Integer size) {
-        return null;
+    public PageUtil<Goods> getGoodsPage(Integer index,Integer size,String goodsname) {
+        Map<String,Object> parma=new HashMap<>();
+        parma.put("index",(index-1)*size);
+        parma.put("size",size);
+        parma.put("goodsname",goodsname);
+        return goodsFeignClient.getGoodsPage(parma);
     }
 
     @Override
-    public List<Goods> getGoodsByType(String type) {
-        return goodsFeign.getGoodsByType(type);
+    public int insetGoods(Goods goods) {
+        return goodsFeignClient.insetGoods(goods);
     }
 
     @Override
-    public Goods getPersonById(Integer id) {
-        return goodsFeign.getPersonById(id);
+    public int updateGoods(Goods goods) {
+        return goodsFeignClient.updateGoods(goods);
     }
 
     @Override
-    public int goodsAdd(Goods goods) {
-        return goodsFeign.goodsAdd(goods);
-    }
-
-    @Override
-    public int goodsDelete(Integer id) {
-        return goodsFeign.goodsDelete(id);
-    }
-
-    @Override
-    public int goodsUpdate(Goods goods) {
-        return goodsFeign.goodsUpdate(goods);
+    public Goods getGoodsById(Integer goodsId) {
+        return goodsFeignClient.getGoodsById(goodsId);
     }
 }

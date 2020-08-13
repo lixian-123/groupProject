@@ -19,7 +19,11 @@ public class Leader implements Serializable {
 
     //有参
 
+    public Leader(String nickname, String passWord){
+        this.nickname = nickname;
+        this.passWord = passWord;
 
+    }
     public Leader(Integer leaderId, String nickname, String passWord, String leaderName, Integer leaderAge, String leaderAddress, String leaderPhone, String card, String leaderArea) {
         this.leaderId = leaderId;
         this.nickname = nickname;

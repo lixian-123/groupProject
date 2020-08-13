@@ -1,68 +1,48 @@
 package com.kgc.service;
 
+import com.kgc.mapper.GoodsMapper;
 import com.kgc.pojo.goods.Goods;
-import com.kgc.mapper.Goodsmapper;
-
 import com.kgc.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
+
 @RestController
-public class RestGoodsservice {
+public class RestGoodsService {
 
     @Autowired
-    private Goodsmapper goodsmapper;
+    private GoodsMapper goodsMapper;
 
-    @RequestMapping("/getAllGoods")
-    public PageUtil getAllGoods(@RequestParam Map<String ,Object> parma){
+    @RequestMapping("/getGoodsPage")
+    public PageUtil<Goods> getGoodsPage(@RequestParam Map<String ,Object> parma){
         PageUtil page=new PageUtil();
-        //当前页面
-        Integer index=Integer.parseInt(parma.get("index").toString());
-        page.setPageIndex(index);
-        //每页条数
-        Integer size=Integer.parseInt(parma.get("size").toString());
-        page.setPageSize(size);
+        page.setPageIndex(Integer.parseInt(parma.get("index").toString()));
+        page.setPageSize(Integer.parseInt(parma.get("size").toString()));
+        page.setTotalCount(goodsMapper.getCount(parma));
+        List<Goods> list=goodsMapper.getGoodByPage(parma);
 
-        List<Goods> list=goodsmapper.getGoodsPage(parma);
-        int cound=goodsmapper.count(parma);
+        page.setList(goodsMapper.getGoodByPage(parma));
         page.setList(list);
-        page.setTotalCount(cound);
         return page;
-
-
     }
 
-    //根据id查询商品详细信息
-    @RequestMapping("/getGoodsById")
-    public Goods getByid(Integer id){
-        return goodsmapper.getPersonById(id);
-    }
-    //根据商品类别查询商品
-    @RequestMapping("/getGoodsType")
-    public List<Goods> getGoodsByType(String type){
-        return goodsmapper.getGoodsByType(type);
+    @RequestMapping("/insertGoods")
+    public int insetGoods(@RequestBody Goods goods){
+        return goodsMapper.insertGoods(goods);
     }
 
-    //添加商品
-    @RequestMapping("/goodsAdd")
-    public int getAdd(Goods goods){
-        int count=goodsmapper.goodsAdd(goods);
-        return count;
+    @RequestMapping("/updategoods")
+    public int updateGoods(@RequestBody Goods goods){
+        return goodsMapper.updateGoods(goods);
     }
-    //删除商品
-    @RequestMapping("/goodsdelete/{id}")
-    public int goodsDelete(Integer id){
-        return goodsmapper.goodsDelete(id);
+
+    @RequestMapping("/getGoodsById/{goodsId}")
+    public Goods getGoodsById(@PathVariable("goodsId") Integer goodsId){
+        return goodsMapper.getGoodsById(goodsId);
     }
-    //修改商品
-    @RequestMapping("/goodsupdate")
-    public int goodsUpdate(Goods goods){
-        return goodsmapper.goodsUpdate(goods);
-    }
+
+
 }

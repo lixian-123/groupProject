@@ -1,8 +1,10 @@
 package com.kgc.service;
 
+import com.alibaba.fastjson.JSON;
 import com.kgc.mapper.LeaderMapper;
 import com.kgc.pojo.user.Leader;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -15,6 +17,26 @@ public class RestLeaderService {
     @Autowired
     private LeaderMapper leaderMapper;
 
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+
+
+    @GetMapping("/testRedis")
+    public String testRedis(){
+        redisTemplate.opsForValue().set("lixian","11111");
+        String lixian = (String) redisTemplate.opsForValue().get("lixian");
+        System.out.println("lixian = " + lixian);
+
+
+        Leader leader =new Leader("lixian","123456");
+        // JSONObject.toJSONString()
+        redisTemplate.opsForValue().set("token888888", JSON.toJSONString(leader));
+
+        return "success";
+    }
+
+
+
     @RequestMapping("/leaderlogin")
     public Leader getleaderLogin(@RequestParam Map<String,Object> param){
         Map<String,Object> map=new HashMap<>();
@@ -22,6 +44,9 @@ public class RestLeaderService {
         String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
         map.put("passWord",passWord);
+
+
+
         return leaderMapper.LeaderLogin(map);
     }
 
