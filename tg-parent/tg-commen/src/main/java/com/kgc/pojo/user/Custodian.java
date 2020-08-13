@@ -3,82 +3,80 @@ package com.kgc.pojo.user;
 import java.io.Serializable;
 
 public class Custodian implements Serializable {
-    private Integer CustId;//管理员编号
-    private String CustName;//昵称
-    private String PassWord;//密码
-    private Integer GoodsInfo;//管理商品信息权限
-    private Integer UserInfo;//用户信息权限
-    private Integer OrderInfo;//订单信息权限
-    private Integer FundInfo;//资金信息权限
+    private Integer custId;//管理员编号
+    private String custName;//昵称
+    private String passWord;//密码
+    private Integer goodsInfo;//管理商品信息权限
+    private Integer userInfo;//用户信息权限
+    private Integer orderInfo;//订单信息权限
+    private Integer fundInfo;//资金信息权限
 
-    //无参
     public Custodian() {
     }
 
-    //有参
     public Custodian(Integer custId, String custName, String passWord, Integer goodsInfo, Integer userInfo, Integer orderInfo, Integer fundInfo) {
-        CustId = custId;
-        CustName = custName;
-        PassWord = passWord;
-        GoodsInfo = goodsInfo;
-        UserInfo = userInfo;
-        OrderInfo = orderInfo;
-        FundInfo = fundInfo;
+        this.custId = custId;
+        this.custName = custName;
+        this.passWord = passWord;
+        this.goodsInfo = goodsInfo;
+        this.userInfo = userInfo;
+        this.orderInfo = orderInfo;
+        this.fundInfo = fundInfo;
     }
 
     public Integer getCustId() {
-        return CustId;
+        return custId;
     }
 
     public void setCustId(Integer custId) {
-        CustId = custId;
+        this.custId = custId;
     }
 
     public String getCustName() {
-        return CustName;
+        return custName;
     }
 
     public void setCustName(String custName) {
-        CustName = custName;
+        this.custName = custName;
     }
 
     public String getPassWord() {
-        return PassWord;
+        return passWord;
     }
 
     public void setPassWord(String passWord) {
-        PassWord = passWord;
+        this.passWord = passWord;
     }
 
     public Integer getGoodsInfo() {
-        return GoodsInfo;
+        return goodsInfo;
     }
 
     public void setGoodsInfo(Integer goodsInfo) {
-        GoodsInfo = goodsInfo;
+        this.goodsInfo = goodsInfo;
     }
 
     public Integer getUserInfo() {
-        return UserInfo;
+        return userInfo;
     }
 
     public void setUserInfo(Integer userInfo) {
-        UserInfo = userInfo;
+        this.userInfo = userInfo;
     }
 
     public Integer getOrderInfo() {
-        return OrderInfo;
+        return orderInfo;
     }
 
     public void setOrderInfo(Integer orderInfo) {
-        OrderInfo = orderInfo;
+        this.orderInfo = orderInfo;
     }
 
     public Integer getFundInfo() {
-        return FundInfo;
+        return fundInfo;
     }
 
     public void setFundInfo(Integer fundInfo) {
-        FundInfo = fundInfo;
+        this.fundInfo = fundInfo;
     }
 }

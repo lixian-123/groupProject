@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.LeaderMapper">
+
+    <!--<select id="getAllLeader" resultType="com.kgc.pojo.Leader">
+        SELECT * FROM leader 
+        LIMIT ${index},${size}
+    </select>
+
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM leader
+    </select>-->
+
+    <select id="LeaderLogin" resultType="com.kgc.pojo.user.Leader">
+        SELECT * FROM leader WHERE nickname=#{nickname} AND PASSWORD=#{passWord}
+    </select>
+    
+    <select id="getLeaderById" resultType="com.kgc.pojo.user.Leader">
+        SELECT * FROM leader WHERE leaderId=#{leaderId}
+    </select>
+
+    <update id="update" parameterType="com.kgc.pojo.user.Leader">
+          UPDATE leader SET
+          nickname=#{nickname},passWord=#{passWord},leaderName=#{leaderName},leaderAge=#{leaderAge},leaderAddress=#{leaderAddress},leaderPhone=#{leaderPhone},card=#{card},leaderArea=#{leaderArea}
+          where leaderId=#{leaderId}
+    </update>
+
+    <insert id="add" parameterType="com.kgc.pojo.user.Leader">
+        INSERT INTO leader VALUES(NULL,#{nickname},#{passWord},#{leaderName},#{leaderAge},#{leaderAddress},#{leaderPhone},#{card},#{leaderArea});
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from leader where leaderId=#{leaderId}
+    </delete>
+
+
+</mapper>  
