@@ -5,7 +5,6 @@ import com.kgc.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,10 +15,8 @@ public class MemberController {
     private MemberService memberService;
 
     @RequestMapping("/memberlogin")
-    public Member getLogin(String nickname, String passWord, HttpServletRequest request){
-        //通过请求头获取用户代理字符串
-        String userAgentStr=request.getHeader("User-Agent");
-        return memberService.getLogin(nickname,passWord,userAgentStr);
+    public Member getLogin(String nickname,String passWord){
+        return memberService.getLogin(nickname,passWord);
     }
 
     @RequestMapping("/memberid/{id}")
