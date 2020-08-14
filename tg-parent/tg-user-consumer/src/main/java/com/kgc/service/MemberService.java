@@ -12,14 +12,14 @@ public interface MemberService {
 
     public Member getLogin(String nickname,String passWord);
 
-    public Member getMemberById(@PathVariable("id") Integer id);
+    public Member getMemberById( Integer id);
 
-    public int update(@RequestBody Member member);
+    public int update(Member member);
 
-    public int add(@RequestBody Member member);
+    public int add(Member member);
 
-    public int delete(@PathVariable("id") Integer id);
+    public int delete(Integer id);
 
-    public Member getMemberFromRedis(@RequestParam String token);
+    public Member getMemberFromRedis(String token);
 
 }

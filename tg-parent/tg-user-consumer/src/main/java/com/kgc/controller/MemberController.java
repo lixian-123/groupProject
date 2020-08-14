@@ -14,7 +14,7 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-    @RequestMapping("/memberlogin")
+    @RequestMapping("/memberlogin") //potman 测试成功
     public Member getLogin(String nickname,String passWord){
         return memberService.getLogin(nickname,passWord);
     }
