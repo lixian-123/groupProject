@@ -21,6 +21,7 @@ public class RestLeaderService {
     private RedisTemplate<String, Object> redisTemplate;
 
 
+
     @GetMapping("/testRedis")
     public String testRedis(){
         redisTemplate.opsForValue().set("lixian","11111");
@@ -44,9 +45,6 @@ public class RestLeaderService {
         String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
         map.put("passWord",passWord);
-
-
-
         return leaderMapper.LeaderLogin(map);
     }
 
@@ -70,8 +68,5 @@ public class RestLeaderService {
     public int delete(@PathVariable("id") Integer id){
         return leaderMapper.delete(id);
     }
-
-
-
 
 }
