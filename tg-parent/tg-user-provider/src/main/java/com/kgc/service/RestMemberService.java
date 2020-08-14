@@ -4,18 +4,23 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.kgc.mapper.MemberMapper;
 import com.kgc.pojo.user.Member;
+import com.kgc.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 public class RestMemberService {
 
     @Autowired
     private MemberMapper memberMapper;
+    @Resource
+    RedisUtils redisUtils;
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
@@ -31,7 +36,7 @@ public class RestMemberService {
 
         Member member=memberMapper.MemberLogin(map);
         if(member!=null){
-            redisTemplate.opsForValue().set(member.getUserPhone(),JSON.toJSONString(member));
+            redisTemplate.opsForValue().set(member.getUserPhone(),JSON.toJSONString(member),2*60*60, TimeUnit.SECONDS);
         }
         return memberMapper.MemberLogin(map);
     }
@@ -59,11 +64,13 @@ public class RestMemberService {
 
     @RequestMapping("/getMemberFromRedis")
     public Member getMemberFromRedis(@RequestParam String token){
-        String jsonStr=redisTemplate.opsForValue().get(token).toString();
-        Member member=JSONObject.parseObject(jsonStr,Member.class);
-        if(member!=null){
-            return member;
+        if(redisUtils.exist(token)){
+            String jsonStr=redisTemplate.opsForValue().get(token).toString();
+            Member member=JSONObject.parseObject(jsonStr,Member.class);
+            if(member!=null){
+                return member;
+            }
         }
-        return member;
+        return null;
     }
 }
