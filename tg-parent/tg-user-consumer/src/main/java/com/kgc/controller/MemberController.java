@@ -40,4 +40,8 @@ public class MemberController {
         return memberService.delete(id);
     }
 
+    @RequestMapping("/getMemberFromRedis")
+    public Member getMemberFromRedis(String token){
+        return  memberService.getMemberFromRedis(token);
+    }
 }

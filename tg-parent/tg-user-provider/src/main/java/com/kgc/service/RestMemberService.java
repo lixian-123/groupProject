@@ -1,8 +1,11 @@
 package com.kgc.service;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.kgc.mapper.MemberMapper;
 import com.kgc.pojo.user.Member;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -14,6 +17,10 @@ public class RestMemberService {
     @Autowired
     private MemberMapper memberMapper;
 
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+
+
     @RequestMapping("/memberlogin")
     public Member getLogin(@RequestParam Map<String,Object> param){
         Map<String,Object> map=new HashMap<>();
@@ -21,6 +28,11 @@ public class RestMemberService {
         String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
         map.put("passWord",passWord);
+
+        Member member=memberMapper.MemberLogin(map);
+        if(member!=null){
+            redisTemplate.opsForValue().set(member.getUserPhone(),JSON.toJSONString(member));
+        }
         return memberMapper.MemberLogin(map);
     }
 
@@ -45,6 +57,13 @@ public class RestMemberService {
         return memberMapper.delete(id);
     }
 
-
-
+    @RequestMapping("/getMemberFromRedis")
+    public Member getMemberFromRedis(@RequestParam String token){
+        String jsonStr=redisTemplate.opsForValue().get(token).toString();
+        Member member=JSONObject.parseObject(jsonStr,Member.class);
+        if(member!=null){
+            return member;
+        }
+        return member;
+    }
 }

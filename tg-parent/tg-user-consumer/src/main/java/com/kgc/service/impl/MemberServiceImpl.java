@@ -43,4 +43,9 @@ public class MemberServiceImpl implements MemberService {
     public int delete(Integer id) {
         return memberFeignClient.delete(id);
     }
+
+    @Override
+    public Member getMemberFromRedis(String token) {
+        return memberFeignClient.getMemberFromRedis(token);
+    }
 }
