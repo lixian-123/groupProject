@@ -34,7 +34,10 @@ public class RestMemberService {
         map.put("nickname",nickname);
         map.put("passWord",passWord);
 
+        //保存用户到redis
         Member member=memberMapper.MemberLogin(map);
+        String token="token:";
+
         if(member!=null){
             redisTemplate.opsForValue().set(member.getUserPhone(),JSON.toJSONString(member),2*60*60, TimeUnit.SECONDS);
         }
@@ -63,7 +66,7 @@ public class RestMemberService {
     }
 
     @RequestMapping("/getMemberFromRedis")
-    public Member getMemberFromRedis(@RequestParam String token){
+    public Member getMemberFromRedis(String token){
         if(redisUtils.exist(token)){
             String jsonStr=redisTemplate.opsForValue().get(token).toString();
             Member member=JSONObject.parseObject(jsonStr,Member.class);
