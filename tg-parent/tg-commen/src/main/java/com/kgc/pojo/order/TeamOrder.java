@@ -1,5 +1,7 @@
 package com.kgc.pojo.order;
 
+
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -15,17 +17,13 @@ public class TeamOrder {
     private Integer orderType; //订单类型
     private Integer goodsNumber; //商品剩余数量
     private Integer quota; //限购量
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private Date startTime;//开始时间
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private Date endTime;//结束时间
+    private String startTime;//开始时间
+    private String endTime;//结束时间
 
     public TeamOrder() {
     }
 
-    public TeamOrder(Integer teamId, Integer goodsId, Integer leaderId, Integer orderType, Integer goodsNumber, Integer quota, Date startTime, Date endTime) {
+    public TeamOrder(Integer teamId, Integer goodsId, Integer leaderId, Integer orderType, Integer goodsNumber, Integer quota, String startTime, String endTime) {
         this.teamId = teamId;
         this.goodsId = goodsId;
         this.leaderId = leaderId;
@@ -84,19 +82,19 @@ public class TeamOrder {
         this.quota = quota;
     }
 
-    public Date getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Date startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
-    public Date getEndTime() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(Date endTime) {
+    public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 }

@@ -122,4 +122,7 @@ public class RedisUtils {
     public boolean validate(String token) {
         return exist(token);
     }
+    public boolean expire(String token,long seconds){
+        return redisTemplate.expire(token,seconds,TimeUnit.SECONDS);
+    }
 }
