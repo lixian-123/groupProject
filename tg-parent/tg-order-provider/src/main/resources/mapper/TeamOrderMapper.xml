@@ -5,7 +5,7 @@
         select * from teamorder where leaderId=#{leaderId}
     </select>
     <insert id="add" parameterType="com.kgc.pojo.order.TeamOrder">
-        insert into teamorder values(null,#{goodsId},#{leaderId},#{orderType},#{goodsNumber},#{quota})
+        insert into teamorder values(null,#{goodsId},#{leaderId},#{orderType},#{goodsNumber},#{quota},#{startTime},#{endTime})
     </insert>
     <update id="update" parameterType="com.kgc.pojo.order.TeamOrder">
         update teamorder set goodsId=#{goodsId},leaderId=#{leaderId},orderType=#{orderType},goodsNumber=#{goodsNumber},quota=#{quota} where teamId=#{teamId}
