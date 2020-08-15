@@ -42,6 +42,7 @@ public class MemberController {
 
     @RequestMapping("/getMemberFromRedis")
     public Member getMemberFromRedis(String token){
+        System.out.println("controller"+token);
         return  memberService.getMemberFromRedis(token);
     }
 }

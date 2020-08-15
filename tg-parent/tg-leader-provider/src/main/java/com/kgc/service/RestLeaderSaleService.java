@@ -28,4 +28,22 @@ public class RestLeaderSaleService {
     public int update(@RequestBody Leader_sale leader_sale){
         return saleMapper.update(leader_sale);
     }
+
+
+
+
+    //查看当日提成
+    @RequestMapping("/getTichengToday")
+    public String getTichengToDay(){
+        return saleMapper.getTichengToday();
+    }
+
+    //查看本月提成
+    @RequestMapping("/getTichengMonth")
+    public String getTichengMonth(){
+        return saleMapper.getTichengMonth();
+    }
+
+
+
 }
