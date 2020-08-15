@@ -10,6 +10,5 @@ public interface LeaderSaleService {
     public int add(Leader_sale leader_sale);
     public int update(Leader_sale leader_sale);
 
-    public String getTichengToDay();
-    public String getTichengMonth();
+
 }

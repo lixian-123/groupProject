@@ -12,6 +12,10 @@
         insert into Leader_sale values(null,#{leaderId},#{ticheng},#{dingdan},#{salemoney},now())
     </insert>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/dev-lixian
     <select id="getTichengToday" resultType="string">
         SELECT SUM(Ticheng)  FROM leader_sale
         WHERE TO_DAYS(DATA)=TO_DAYS(NOW());
@@ -21,4 +25,8 @@
         SELECT SUM(Ticheng) FROM leader_sale
         WHERE DATE_FORMAT( DATA,'%Y%m') = DATE_FORMAT( CURDATE( ),'%Y%m')
     </select>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/dev-lixian
 </mapper>

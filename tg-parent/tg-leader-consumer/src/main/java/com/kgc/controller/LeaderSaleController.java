@@ -28,13 +28,4 @@ public class LeaderSaleController {
         return saleService.update(leader_sale);
     }
 
-    @RequestMapping("/getTichengToday")
-    public String getTichengToDay(){
-        return saleService.getTichengToDay();
-    }
-
-    @RequestMapping("/getTichengMonth")
-    public String getTichengMonth(){
-        return saleService.getTichengMonth();
-    }
 }

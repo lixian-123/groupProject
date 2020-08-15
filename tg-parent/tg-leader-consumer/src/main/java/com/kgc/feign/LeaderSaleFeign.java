@@ -18,9 +18,4 @@ public interface LeaderSaleFeign {
     @RequestMapping("updateLeaderSale")
     public int update(@RequestBody Leader_sale leader_sale);
 
-    @RequestMapping("/getTichengToday")
-    public String getTichengToDay();
-
-    @RequestMapping("/getTichengMonth")
-    public String getTichengMonth();
 }

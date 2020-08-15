@@ -28,13 +28,4 @@ public class LeaderSaleServiceImpl implements LeaderSaleService {
         return saleFeign.update(leader_sale);
     }
 
-    @Override
-    public String getTichengToDay() {
-        return saleFeign.getTichengToDay();
-    }
-
-    @Override
-    public String getTichengMonth() {
-        return saleFeign.getTichengMonth();
-    }
 }
