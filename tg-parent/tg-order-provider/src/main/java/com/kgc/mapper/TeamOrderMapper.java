@@ -11,4 +11,5 @@ public interface TeamOrderMapper {
     public int add(TeamOrder teamOrder);
     public int update(TeamOrder teamOrder);
     public int delete(@Param("teamId")Integer teamId);
+    public int getVersion(@Param("teamId") Integer teamId);
 }

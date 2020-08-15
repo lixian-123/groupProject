@@ -18,4 +18,6 @@ public interface TeamOrderFeign {
     public int updateTeam(@RequestBody TeamOrder teamOrder);
     @RequestMapping("/deleteTeam")
     public int deleteTeam(@RequestParam("teamId")Integer teamId);
+    @RequestMapping("/showVersion")
+    public int getVersion(@RequestParam("teamId")Integer teamId);
 }
