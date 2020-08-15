@@ -13,4 +13,7 @@
     <delete id="delete" parameterType="int">
         delete * from teamorder where teamId=#{teamId}
     </delete>
+    <select id="getVersion" resultType="int">
+        select version from teamorder where teamId=#{teamId}
+    </select>
 </mapper>
