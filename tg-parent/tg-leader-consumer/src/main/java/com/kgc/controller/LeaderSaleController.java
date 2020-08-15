@@ -27,4 +27,14 @@ public class LeaderSaleController {
     public int update(@RequestBody Leader_sale leader_sale){
         return saleService.update(leader_sale);
     }
+
+    @RequestMapping("/getTichengToday")
+    public String getTichengToDay(){
+        return saleService.getTichengToDay();
+    }
+
+    @RequestMapping("/getTichengMonth")
+    public String getTichengMonth(){
+        return saleService.getTichengMonth();
+    }
 }
