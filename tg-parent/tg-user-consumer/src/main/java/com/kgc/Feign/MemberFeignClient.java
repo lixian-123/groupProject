@@ -29,6 +29,6 @@ public interface MemberFeignClient {
     public int delete(@PathVariable("id") Integer id);
 
     @RequestMapping("/getMemberFromRedis")
-    public Member getMemberFromRedis(@RequestParam String token);
+    public Member getMemberFromRedis(String token);
 
 }

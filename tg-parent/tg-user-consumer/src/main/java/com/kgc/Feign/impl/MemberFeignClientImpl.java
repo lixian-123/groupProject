@@ -32,4 +32,11 @@ public class MemberFeignClientImpl implements MemberFeignClient {
     public int delete(Integer id) {
         return 0;
     }
+
+    @Override
+    public Member getMemberFromRedis(String token) {
+        return null;
+    }
+
+
 }
