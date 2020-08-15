@@ -19,23 +19,23 @@ public class MemberController {
         return memberService.getLogin(nickname,passWord);
     }
 
-    @RequestMapping("/memberid/{id}")
+    @RequestMapping("/memberid/{id}") //已测
     public Member getMemberById(@PathVariable("id") Integer id){
         return memberService.getMemberById(id);
     }
 
-    @RequestMapping("/memberupdate")
+    @RequestMapping("/memberupdate") //已测
     public int update(@RequestBody Member member){
         return memberService.update(member);
     }
 
-    @RequestMapping("/memberadd")
+    @RequestMapping("/memberadd") //已测
     public int add(@RequestBody Member member){
         return memberService.add(member);
     }
 
 
-    @RequestMapping("/memberdelete/{id}")
+    @RequestMapping("/memberdelete/{id}") //已测
     public int delete(@PathVariable("id") Integer id){
         return memberService.delete(id);
     }

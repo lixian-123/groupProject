@@ -12,17 +12,17 @@ public class StreamController {
     private StreamService streamService;
 
 
-    @RequestMapping("/streamid/{id}")
+    @RequestMapping("/streamid/{id}") //已测
     public UserStream getMemberById(@PathVariable("id") Integer id){
         return streamService.getMemberById(id);
     }
 
-    @PostMapping("/streamupdate")
+    @PostMapping("/streamupdate") //已测
     public int update(@RequestBody UserStream userStream){
         return streamService.update(userStream);
     }
 
-    @PostMapping("/stramadd")
+    @PostMapping("/stramadd") //已测
     public int add(@RequestBody UserStream userStream){
         return streamService.add(userStream);
     }

@@ -17,11 +17,11 @@ public class OrderDetailController {
     OrderDetailService detailService;
     @Autowired
     RedisUtils redisUtils;
-    @RequestMapping("/showDetail")
+    @RequestMapping("/showDetail") //已测
     public List<OrderDetail> showDetail(@RequestParam("userId")Integer userId, @RequestParam("leaderId")Integer leaderId){
         return  detailService.getAllDetail(userId,leaderId);
     }
-    @RequestMapping("/addDetail")
+    @RequestMapping("/addDetail") //已测
     public int addDetail(@RequestBody OrderDetail orderDetail){
         String key="TeamGoods_"+orderDetail.getGoodsId();
         if(redisUtils.exist(key)){
@@ -29,7 +29,7 @@ public class OrderDetailController {
         }
         return  detailService.add(orderDetail);
     }
-    @RequestMapping("/updateDetail")
+    @RequestMapping("/updateDetail") //已测
     public int updateDetail(@RequestBody OrderDetail orderDetail){
         return  detailService.update(orderDetail);
     }
