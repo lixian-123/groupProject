@@ -63,10 +63,10 @@ public class OrderServiceImpl {
             }
             String TeamJson=redisTemplate.opsForValue().get(token).toString();
             TeamOrder teamOrder= JSON.parseObject(TeamJson,TeamOrder.class);
-            int version=teamOrder.getVersion();
+            int versionValue=teamOrder.getVersion();
             teamOrder.setGoodsNumber(teamOrder.getGoodsNumber()-mqMessVo.getGoodsNum());
-
-
+            redisTemplate.opsForValue().set(key,teamOrder);
+            teamOrderFeign.updateTeam(teamOrder);
         }catch (Exception e){
             e.printStackTrace();
         }
