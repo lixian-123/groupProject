@@ -14,4 +14,5 @@ public interface TeamOrderMapper {
     public int delete(@Param("teamId")Integer teamId);
     public int getVersion(@Param("teamId") Integer teamId);
     public int updateGoodsNum(Map<String,Object> map);
+
 }

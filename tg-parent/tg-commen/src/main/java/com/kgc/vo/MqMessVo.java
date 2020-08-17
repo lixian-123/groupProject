@@ -10,6 +10,9 @@ public class MqMessVo implements Serializable {
     private Integer goodsId;//商品
     private Integer teamId;//团购订单id
     private Integer goodsNum;//用户购买的数量
+    private String token;
+    private Integer goodsId;
+    private Integer teamId;
 
     public String getToken() {
         return token;

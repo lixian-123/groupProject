@@ -15,7 +15,7 @@ import java.util.Map;
 @RestController
 @CrossOrigin
 public class RestTeamOrderService {
-    @Autowired
+    @Resource
     TeamOrderMapper teamOrderMapper;
     @RequestMapping("/showTeam")
     public List<TeamOrder> showTeam(@RequestParam("leaderId")Integer leaderId){
