@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
 public class RestTeamOrderService {
-    @Autowired
+    @Resource
     TeamOrderMapper teamOrderMapper;
     @RequestMapping("/showTeam")
     public List<TeamOrder> showTeam(@RequestParam("leaderId")Integer leaderId){
@@ -30,5 +31,9 @@ public class RestTeamOrderService {
     @RequestMapping("/deleteTeam")
     public int deleteTeam(@RequestParam("teamId")Integer teamId){
         return teamOrderMapper.delete(teamId);
+    }
+    @RequestMapping("/showVersion")
+    public int getVersion(@RequestParam("teamId")Integer teamId){
+        return  teamOrderMapper.getVersion(teamId);
     }
 }

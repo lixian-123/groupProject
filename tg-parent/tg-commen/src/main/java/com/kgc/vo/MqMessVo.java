@@ -7,7 +7,8 @@ import java.io.Serializable;
  */
 public class MqMessVo implements Serializable {
     private String token;
-    private String goodsId;
+    private Integer goodsId;
+    private Integer teamId;
 
     public String getToken() {
         return token;
@@ -17,11 +18,19 @@ public class MqMessVo implements Serializable {
         this.token = token;
     }
 
-    public String getGoodsId() {
+    public int getGoodsId() {
         return goodsId;
     }
 
-    public void setGoodsId(String goodsId) {
+    public void setGoodsId(Integer goodsId) {
         this.goodsId = goodsId;
+    }
+
+    public Integer getTeamId() {
+        return teamId;
+    }
+
+    public void setTeamId(Integer teamId) {
+        this.teamId = teamId;
     }
 }
