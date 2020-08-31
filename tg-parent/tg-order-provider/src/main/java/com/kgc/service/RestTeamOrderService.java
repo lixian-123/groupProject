@@ -3,16 +3,17 @@ package com.kgc.service;
 import com.kgc.mapper.TeamOrderMapper;
 import com.kgc.pojo.order.RetailOrder;
 import com.kgc.pojo.order.TeamOrder;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
+@CrossOrigin
 public class RestTeamOrderService {
     @Resource
     TeamOrderMapper teamOrderMapper;
@@ -35,5 +36,13 @@ public class RestTeamOrderService {
     @RequestMapping("/showVersion")
     public int getVersion(@RequestParam("teamId")Integer teamId){
         return  teamOrderMapper.getVersion(teamId);
+    }
+    @RequestMapping("/updateGoodsNum")
+    public int updateGoodsNum(@RequestParam("teamId")Integer teamId,@RequestParam("versionValue")Integer versionValue,@RequestParam("goodsNumber")Integer goodsNumber){
+        Map<String,Object> map=new HashMap<>();
+        map.put("teamId",teamId);
+        map.put("versionValue",versionValue);
+        map.put("goodsNumber",goodsNumber);
+        return teamOrderMapper.updateGoodsNum(map);
     }
 }

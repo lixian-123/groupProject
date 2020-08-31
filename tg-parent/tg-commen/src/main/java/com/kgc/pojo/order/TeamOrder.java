@@ -19,11 +19,12 @@ public class TeamOrder {
     private Integer quota; //限购量
     private String startTime;//开始时间
     private String endTime;//结束时间
+    private Integer version;//版本号
 
     public TeamOrder() {
     }
 
-    public TeamOrder(Integer teamId, Integer goodsId, Integer leaderId, Integer orderType, Integer goodsNumber, Integer quota, String startTime, String endTime) {
+    public TeamOrder(Integer teamId, Integer goodsId, Integer leaderId, Integer orderType, Integer goodsNumber, Integer quota, String startTime, String endTime, Integer version) {
         this.teamId = teamId;
         this.goodsId = goodsId;
         this.leaderId = leaderId;
@@ -32,6 +33,7 @@ public class TeamOrder {
         this.quota = quota;
         this.startTime = startTime;
         this.endTime = endTime;
+        this.version = version;
     }
 
     public Integer getTeamId() {
@@ -96,5 +98,13 @@ public class TeamOrder {
 
     public void setEndTime(String endTime) {
         this.endTime = endTime;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
     }
 }

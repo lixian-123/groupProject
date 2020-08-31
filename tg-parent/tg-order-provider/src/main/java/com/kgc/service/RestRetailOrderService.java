@@ -5,14 +5,13 @@ import com.kgc.mapper.RetailOrderMapper;
 import com.kgc.pojo.order.OrderDetail;
 import com.kgc.pojo.order.RetailOrder;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin
+@RequestMapping("/RetailOrder")
 public class RestRetailOrderService {
     @Autowired
     RetailOrderMapper retailMapper;

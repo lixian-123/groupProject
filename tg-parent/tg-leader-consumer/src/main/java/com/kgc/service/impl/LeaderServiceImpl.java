@@ -16,6 +16,7 @@ public class LeaderServiceImpl implements LeaderService {
     RedisFeign redisFeign;
 
     @Override
+    //添加团购信息
     public int addTeam(TeamOrder teamOrder) {
         return leaderFeign.addTeam(teamOrder);
     }

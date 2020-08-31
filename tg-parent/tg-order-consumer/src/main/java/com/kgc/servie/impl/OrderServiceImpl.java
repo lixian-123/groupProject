@@ -1,9 +1,13 @@
 package com.kgc.servie.impl;
 
+import com.alibaba.fastjson.JSON;
+
 import com.kgc.config.RabbitConfig;
 import com.kgc.feign.GoodsFeign;
 import com.kgc.feign.MemberFeign;
 import com.kgc.feign.TeamOrderFeign;
+
+import com.kgc.pojo.order.TeamOrder;
 import com.kgc.pojo.user.Member;
 import com.kgc.vo.Dto;
 import com.kgc.vo.DtoUtil;
@@ -51,14 +55,23 @@ public class OrderServiceImpl {
         if(member==null) {
             return;
         }
+        String key="TeamGoods_"+mqMessVo.getGoodsId();
+        try{
         try{
             String key="TeamGoods_"+mqMessVo.getGoodsId();
+
             redisTemplate.watch(key);
             redisTemplate.multi();
             int num=goodsFeign.checkNumberTeam(mqMessVo.getGoodsId());
             if(num<=0){
                 return;
             }
+            String TeamJson=redisTemplate.opsForValue().get(token).toString();
+            TeamOrder teamOrder= JSON.parseObject(TeamJson,TeamOrder.class);
+            int versionValue=teamOrder.getVersion();
+            teamOrder.setGoodsNumber(teamOrder.getGoodsNumber()-mqMessVo.getGoodsNum());
+            redisTemplate.opsForValue().set(key,teamOrder);
+            teamOrderFeign.updateTeam(teamOrder);
 
         }catch (Exception e){
             e.printStackTrace();

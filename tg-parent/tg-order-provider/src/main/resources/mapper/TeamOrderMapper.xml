@@ -16,4 +16,7 @@
     <select id="getVersion" resultType="int">
         select version from teamorder where teamId=#{teamId}
     </select>
+    <update id="updateGoodsNum" parameterType="java.util.Map">
+        update teamorder set goodsNumber=#{goodsNumber} where teamId=#{teamId} and version=#{versionValue}
+    </update>
 </mapper>

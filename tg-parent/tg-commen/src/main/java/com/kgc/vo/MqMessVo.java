@@ -6,6 +6,10 @@ import java.io.Serializable;
  * 消息中间件 类
  */
 public class MqMessVo implements Serializable {
+    private String token;//用户token
+    private Integer goodsId;//商品
+    private Integer teamId;//团购订单id
+    private Integer goodsNum;//用户购买的数量
     private String token;
     private Integer goodsId;
     private Integer teamId;
@@ -32,5 +36,13 @@ public class MqMessVo implements Serializable {
 
     public void setTeamId(Integer teamId) {
         this.teamId = teamId;
+    }
+
+    public Integer getGoodsNum() {
+        return goodsNum;
+    }
+
+    public void setGoodsNum(Integer goodsNum) {
+        this.goodsNum = goodsNum;
     }
 }
