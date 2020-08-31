@@ -22,6 +22,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="tg-gateway" target="1.8" />
+      <module name="tgzuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

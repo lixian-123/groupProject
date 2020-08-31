@@ -18,5 +18,6 @@
     <file url="file://$PROJECT_DIR$/tg-parent/tg-shopcart-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tg-parent/tg-user-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tg-parent/tg-user-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tg-parent/tg-zuul" charset="UTF-8" />
   </component>
 </project>
