@@ -6,6 +6,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
@@ -21,8 +22,26 @@ import java.util.concurrent.TimeUnit;
  */
 @Component
 public class RedisUtils {
+    @Resource
+    StringRedisTemplate stringRedisTemplate;
 
     private Logger logger = LoggerFactory.getLogger(RedisUtils.class);
+    //开启事务
+    public void begin(){
+        //开启事务权限
+        stringRedisTemplate.setEnableTransactionSupport(true);
+        //开启事务
+        stringRedisTemplate.multi();
+    }
+    //提交事务
+    public void exec(){
+        //成功提交事务
+        stringRedisTemplate.exec();
+    }
+    //回滚事务
+    public void discard(){
+        stringRedisTemplate.discard();
+    }
 
     @Resource
     private RedisTemplate<String, Object> redisTemplate;

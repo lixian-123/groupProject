@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+import java.util.Map;
 
 @FeignClient(name = "tg-order-provider")
 public interface TeamOrderFeign {
@@ -15,9 +16,11 @@ public interface TeamOrderFeign {
     @RequestMapping("/addTeam")
     public int addTeam(@RequestBody TeamOrder teamOrder);
     @RequestMapping("/updateTeam")
-    public int updateTeam(@RequestBody TeamOrder teamOrder);
+    public int updateTeam(@RequestBody TeamOrder teamOrder,@RequestParam("versionValue")Integer versionValue);
     @RequestMapping("/deleteTeam")
     public int deleteTeam(@RequestParam("teamId")Integer teamId);
-    @RequestMapping("/showVersion")
+    @RequestMapping("/getVersion")
     public int getVersion(@RequestParam("teamId")Integer teamId);
+    @RequestMapping("/updateGoodsNum")
+    public int updateGoodsNum(@RequestParam Map<String,Object> map);
 }

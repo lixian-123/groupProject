@@ -3,6 +3,7 @@ package com.kgc.service;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.kgc.mapper.MemberMapper;
+import com.kgc.pojo.order.TeamOrder;
 import com.kgc.pojo.user.Member;
 import com.kgc.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,12 +67,23 @@ public class RestMemberService {
     }
 
     @RequestMapping("/getMemberFromRedis")
-    public Member getMemberFromRedis(String token){
+    public Member getMemberFromRedis(@RequestParam("token") String token){
         if(redisUtils.exist(token)){
             String jsonStr=redisTemplate.opsForValue().get(token).toString();
             Member member=JSONObject.parseObject(jsonStr,Member.class);
             if(member!=null){
                 return member;
+            }
+        }
+        return null;
+    }
+    @RequestMapping("/getTeam")
+    public TeamOrder getTeamFromRedis(@RequestParam("key") String key){
+        if(redisUtils.exist(key)){
+            String jsonStr=redisUtils.get(key).toString();
+            TeamOrder teamOrder=JSONObject.parseObject(jsonStr,TeamOrder.class);
+            if(teamOrder!=null){
+                return teamOrder;
             }
         }
         return null;

@@ -24,9 +24,7 @@ public class OrderDetailController {
     @RequestMapping("/addDetail")
     public int addDetail(@RequestBody OrderDetail orderDetail){
         String key="TeamGoods_"+orderDetail.getGoodsId();
-        if(redisUtils.exist(key)){
 
-        }
         return  detailService.add(orderDetail);
     }
     @RequestMapping("/updateDetail")
