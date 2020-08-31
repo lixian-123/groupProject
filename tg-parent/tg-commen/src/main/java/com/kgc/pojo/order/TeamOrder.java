@@ -5,12 +5,13 @@ package com.kgc.pojo.order;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 团购订单
  */
-public class TeamOrder {
+public class TeamOrder implements Serializable {
     private Integer teamId; //团购类型id
     private Integer goodsId; //商品id
     private Integer leaderId; //团长id

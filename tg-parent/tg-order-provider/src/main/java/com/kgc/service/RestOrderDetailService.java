@@ -27,4 +27,5 @@ public class RestOrderDetailService {
     public int updateDetail(@RequestBody OrderDetail orderDetail){
         return  detailMapper.update(orderDetail);
     }
+
 }

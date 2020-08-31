@@ -14,10 +14,7 @@ import java.util.List;
 public class TeamOrderController {
     @Autowired
     TeamOrderService teamOrderService;
-    @RequestMapping("/showTeam")
-    public List<TeamOrder> showTeam(@RequestParam("leaderId")Integer leaderId){
-        return  teamOrderService.getAllTeam(leaderId);
-    }
+
     @RequestMapping("/addTeam")
     public int addTeam(@RequestBody TeamOrder teamOrder){
         return  teamOrderService.add(teamOrder);
@@ -30,4 +27,5 @@ public class TeamOrderController {
     public int deleteTeam(@RequestParam("teamId")Integer teamId){
         return teamOrderService.delete(teamId);
     }
+
 }

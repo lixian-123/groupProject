@@ -3,6 +3,16 @@ server:
 spring:
   application:
     name: tg-order-consumer
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
 eureka:
   client:
     service-url:
@@ -12,4 +22,10 @@ eureka:
 
 feign:
   hystrix:
-    enabled: true
+    enabled: false
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 20000
+

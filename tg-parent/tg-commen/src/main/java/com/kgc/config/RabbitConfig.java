@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitConfig {
     public static final String QUEUE_EMAIL="email";
     public static final String QUEUE_SMS="sms";
-    public static final String EXCHANGE="myexchangeTopics";
+    public static final String EXCHANGE="TGExchangeTopics";
 
     @Bean(EXCHANGE)
     public Exchange createExchange(){
@@ -22,8 +22,8 @@ public class RabbitConfig {
         return queue;
     }
     @Bean(QUEUE_SMS)
-    public Queue createSMSQueue(@Value("target")String target){
-        Queue queue=new Queue(target);
+    public Queue createSMSQueue(){
+        Queue queue=new Queue("tg");
         return queue;
     }
     @Bean

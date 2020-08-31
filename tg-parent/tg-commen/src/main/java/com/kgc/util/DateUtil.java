@@ -52,7 +52,7 @@ public class DateUtil {
     public static long getSecond(Date start,Date end){
         long startTimeLong=start.getTime();
         long endTimeLong=end.getTime();
-        return endTimeLong-startTimeLong;
+        return (endTimeLong-startTimeLong)/1000;
     }
 
     /**

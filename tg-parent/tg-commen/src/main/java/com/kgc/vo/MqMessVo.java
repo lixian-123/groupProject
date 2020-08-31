@@ -10,9 +10,7 @@ public class MqMessVo implements Serializable {
     private Integer goodsId;//商品
     private Integer teamId;//团购订单id
     private Integer goodsNum;//用户购买的数量
-    private String token;
-    private Integer goodsId;
-    private Integer teamId;
+    private Double sumMoney;//用户支付的总价格
 
     public String getToken() {
         return token;
@@ -44,5 +42,13 @@ public class MqMessVo implements Serializable {
 
     public void setGoodsNum(Integer goodsNum) {
         this.goodsNum = goodsNum;
+    }
+
+    public Double getSumMoney() {
+        return sumMoney;
+    }
+
+    public void setSumMoney(Double sumMoney) {
+        this.sumMoney = sumMoney;
     }
 }
