@@ -89,9 +89,7 @@ public class RestTeamOrderService {
             teamOrder.setVersion(teamOrder.getVersion()+1);
             redisTemplate.opsForValue().set(key,JSON.toJSONString(teamOrder));
         }catch (Exception e){
-            try {
 
-            }
         }
 
         try{
