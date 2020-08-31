@@ -20,5 +20,8 @@
         <module name="tg-user-provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tgzuul" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
