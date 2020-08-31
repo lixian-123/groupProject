@@ -66,7 +66,7 @@ public class RestTeamOrderService {
 
     @Transactional(rollbackFor = Exception.class)//开启事务注解
     @RequestMapping("/updateGoodsNum")
-    public int updateGoodsNum(@RequestParam Map<String,Object> map){
+    public int updateGoodsNum(@RequestParam Map<String,Object> map) throws Exception{
 
         TransactionStatus transactionStatus=null;
         String mqJson=(String) map.get("mqMessVo");
@@ -89,7 +89,7 @@ public class RestTeamOrderService {
             teamOrder.setVersion(teamOrder.getVersion()+1);
             redisTemplate.opsForValue().set(key,JSON.toJSONString(teamOrder));
         }catch (Exception e){
-
+            throw new Exception("sad");
         }
 
         try{
