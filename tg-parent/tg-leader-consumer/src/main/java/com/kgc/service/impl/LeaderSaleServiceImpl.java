@@ -27,4 +27,5 @@ public class LeaderSaleServiceImpl implements LeaderSaleService {
     public int update(Leader_sale leader_sale) {
         return saleFeign.update(leader_sale);
     }
+
 }

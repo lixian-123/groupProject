@@ -17,4 +17,5 @@ public interface LeaderSaleFeign {
     public int add(@RequestBody Leader_sale leader_sale);
     @RequestMapping("updateLeaderSale")
     public int update(@RequestBody Leader_sale leader_sale);
+
 }

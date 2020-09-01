@@ -27,4 +27,5 @@ public class LeaderSaleController {
     public int update(@RequestBody Leader_sale leader_sale){
         return saleService.update(leader_sale);
     }
+
 }
