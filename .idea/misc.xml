@@ -12,6 +12,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/tg-parent/tg-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/tg-parent/tg-zuul/pom.xml" />
       </set>
     </option>
