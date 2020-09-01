@@ -17,8 +17,6 @@
         <module>tg-goods-consumer</module>
         <module>tg-shopcart-provider</module>
         <module>tg-shopcart-consumer</module>
-
-
     </modules>
 
     <parent>
