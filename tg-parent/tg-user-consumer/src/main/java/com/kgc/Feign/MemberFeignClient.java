@@ -13,6 +13,7 @@ import java.util.Map;
 @FeignClient(name = "tg-user-provider",fallback = MemberFeignClientImpl.class)
 public interface MemberFeignClient {
 
+
     @RequestMapping("/memberlogin")
     public Member getLogin(@RequestParam Map<String,Object> param);
 
@@ -30,5 +31,8 @@ public interface MemberFeignClient {
 
     @RequestMapping("/getMemberFromRedis")
     public Member getMemberFromRedis(String token);
+
+    @RequestMapping("/pay")
+    public String aliPay(String subjectName,String orderNo,String amount);
 
 }

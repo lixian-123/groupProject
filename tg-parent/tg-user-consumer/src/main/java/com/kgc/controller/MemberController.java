@@ -44,4 +44,6 @@ public class MemberController {
     public Member getMemberFromRedis(String token){
         return  memberService.getMemberFromRedis(token);
     }
+
+
 }

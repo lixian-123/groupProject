@@ -10,8 +10,8 @@ import java.util.Map;
  */
 public interface GoodsMapper {
     //分页显示
-    List<Goods> getGoodByPage(Map<String,Object> param);
-    int getCount(Map<String,Object> param);
+    List<Goods> getGoodByPage(Map<String, Object> param);
+    int getCount(Map<String, Object> param);
 
     //添加商品
    int insertGoods(Goods goods);

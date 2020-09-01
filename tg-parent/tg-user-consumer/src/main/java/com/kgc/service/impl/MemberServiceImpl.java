@@ -48,4 +48,9 @@ public class MemberServiceImpl implements MemberService {
     public Member getMemberFromRedis(String token) {
         return memberFeignClient.getMemberFromRedis(token);
     }
+
+    @Override
+    public String aliPay(String subjectName, String orderNo, String amount) {
+        return memberFeignClient.aliPay(subjectName,orderNo,amount);
+    }
 }
