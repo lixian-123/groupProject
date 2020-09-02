@@ -14,15 +14,15 @@ import java.util.List;
 public class RetailOrderController {
     @Autowired
     RetailOrderService retailOrderService;
-    @RequestMapping("/showRetail")
+    @RequestMapping("/showRetail") //已测
     public List<RetailOrder> showRetail(@RequestParam("userId")Integer userId, @RequestParam("leaderId")Integer leaderId){
         return  retailOrderService.getAllRetail(userId,leaderId);
     }
-    @RequestMapping("/addRetail")
+    @RequestMapping("/addRetail") //已测
     public int addRetail(@RequestBody RetailOrder retailOrder){
         return  retailOrderService.add(retailOrder);
     }
-    @RequestMapping("/updateRetail")
+    @RequestMapping("/updateRetail") //已测
     public int updateRetail(@RequestBody RetailOrder retailOrder){
         return  retailOrderService.update(retailOrder);
     }

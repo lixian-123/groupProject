@@ -22,4 +22,6 @@ public interface MemberService {
 
     public Member getMemberFromRedis(String token);
 
+    public String aliPay(String subjectName,String orderNo,String amount);
+
 }

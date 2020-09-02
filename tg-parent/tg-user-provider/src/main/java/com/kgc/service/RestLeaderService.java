@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.kgc.config.RabbitConfig;
 import com.kgc.mapper.LeaderMapper;
 import com.kgc.pojo.user.Leader;
+import com.kgc.pojo.user.Member;
 import com.kgc.vo.Dto;
 import com.kgc.vo.DtoUtil;
 import com.kgc.vo.MqMessVo;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @CrossOrigin
@@ -29,6 +31,7 @@ public class RestLeaderService {
 
 
 
+    //测试
     @GetMapping("/testRedis")
     public String testRedis(){
         redisTemplate.opsForValue().set("lixian","11111");
@@ -52,6 +55,14 @@ public class RestLeaderService {
         String passWord=param.get("passWord").toString();
         map.put("nickname",nickname);
         map.put("passWord",passWord);
+
+        //保存用户到redis
+        Leader leader=leaderMapper.LeaderLogin(map);
+        String token="token:";
+
+        if(leader!=null){
+            redisTemplate.opsForValue().set(leader.getNickname(),JSON.toJSONString(leader),2*60*60, TimeUnit.SECONDS);
+        }
         return leaderMapper.LeaderLogin(map);
     }
 

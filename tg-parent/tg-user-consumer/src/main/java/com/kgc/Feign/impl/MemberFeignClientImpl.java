@@ -38,5 +38,10 @@ public class MemberFeignClientImpl implements MemberFeignClient {
         return null;
     }
 
+    @Override
+    public String aliPay(String subjectName, String orderNo, String amount) {
+        return null;
+    }
+
 
 }

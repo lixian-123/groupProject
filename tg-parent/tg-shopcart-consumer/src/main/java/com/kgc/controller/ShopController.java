@@ -15,23 +15,23 @@ public class ShopController {
     private ShopService shopService;
 
 
-    @RequestMapping("/shopid/{id}")
+    @RequestMapping("/shopid/{id}") //已测
     public ShopCar getShopById(@PathVariable("id") Integer id){
         return shopService.getShopById(id);
     }
 
-    @RequestMapping("/shopupdate")
+    @RequestMapping("/shopupdate") //已测
     public int update(@RequestBody ShopCar shopCar){
         return shopService.update(shopCar);
     }
 
-    @RequestMapping("/shopadd")
+    @RequestMapping("/shopadd") //已测
     public int add(@RequestBody ShopCar shopCar){
         return shopService.add(shopCar);
     }
 
 
-    @RequestMapping("/shopdelete/{id}")
+    @RequestMapping("/shopdelete/{id}") //已测
     public int delete(@PathVariable("id") Integer id){
         return shopService.delete(id);
     }
