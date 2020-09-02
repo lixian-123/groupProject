@@ -27,6 +27,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
+
         <dependency>
             <artifactId>tg-commen</artifactId>
             <groupId>com.kgc</groupId>

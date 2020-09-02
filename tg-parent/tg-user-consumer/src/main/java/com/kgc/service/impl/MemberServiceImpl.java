@@ -46,6 +46,7 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public Member getMemberFromRedis(String token) {
+        System.out.println("service"+token);
         return memberFeignClient.getMemberFromRedis(token);
     }
 

@@ -1,8 +1,12 @@
 server:
-  port: 7002
+  port: 7005
 spring:
   application:
     name: tg-order-provider
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/tg_order

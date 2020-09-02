@@ -5,12 +5,21 @@
         select * from teamorder where leaderId=#{leaderId}
     </select>
     <insert id="add" parameterType="com.kgc.pojo.order.TeamOrder">
-        insert into teamorder values(null,#{goodsId},#{leaderId},#{orderType},#{goodsNumber},#{quota},#{startTime},#{endTime})
+        insert into teamorder values(null,#{goodsId},#{leaderId},#{orderType},#{goodsNumber},#{quota},#{startTime},#{endTime},#{version})
     </insert>
     <update id="update" parameterType="com.kgc.pojo.order.TeamOrder">
-        update teamorder set goodsId=#{goodsId},leaderId=#{leaderId},orderType=#{orderType},goodsNumber=#{goodsNumber},quota=#{quota} where teamId=#{teamId}
+        update teamorder set goodsNumber=#{goodsNumber},version=${version}+1  where teamId=#{teamId} and version=#{versionValue}
     </update>
     <delete id="delete" parameterType="int">
         delete * from teamorder where teamId=#{teamId}
     </delete>
+    <select id="getVersion" resultType="int">
+        select version from teamorder where teamId=#{teamId}
+    </select>
+    <update id="updateGoodsNum" parameterType="java.util.Map">
+        update teamorder set goodsNumber=#{goodsNumber},version=version+1 where teamId=#{teamId} and version=#{versionValue}
+    </update>
+    <select id="getTeamOrder" resultType="com.kgc.pojo.order.TeamOrder">
+        select * from teamorder where startTime=#{startTime} and endTime=#{endTime}
+    </select>
 </mapper>

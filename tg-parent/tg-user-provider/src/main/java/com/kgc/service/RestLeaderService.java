@@ -1,13 +1,19 @@
 package com.kgc.service;
 
 import com.alibaba.fastjson.JSON;
+import com.kgc.config.RabbitConfig;
 import com.kgc.mapper.LeaderMapper;
 import com.kgc.pojo.user.Leader;
 import com.kgc.pojo.user.Member;
+import com.kgc.vo.Dto;
+import com.kgc.vo.DtoUtil;
+import com.kgc.vo.MqMessVo;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -16,8 +22,9 @@ import java.util.concurrent.TimeUnit;
 @CrossOrigin
 public class RestLeaderService {
 
-    @Autowired
+    @Resource
     private LeaderMapper leaderMapper;
+
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;

@@ -20,10 +20,14 @@ import java.util.Date;
 public class LeaderController {
     @Autowired
     LeaderService leaderService;
+
     @RequestMapping("/addTeam")
     public int addTeam(@RequestBody TeamOrder teamOrder){
-        if(leaderService.saveTeamRedis(teamOrder)){
-            return  leaderService.addTeam(teamOrder);
+        if(leaderService.addTeam(teamOrder)>0){
+            TeamOrder teamOrder1=leaderService.getTeamOrder(teamOrder.getStartTime(),teamOrder.getEndTime());
+            if(leaderService.saveTeamRedis(teamOrder1)){
+                return 1;
+            }
         }
         return 0;
     }

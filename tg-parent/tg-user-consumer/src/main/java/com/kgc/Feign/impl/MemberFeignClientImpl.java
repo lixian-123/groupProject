@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-@Component
+
 public class MemberFeignClientImpl implements MemberFeignClient {
     @Override
     public Member getLogin(Map<String, Object> param) {

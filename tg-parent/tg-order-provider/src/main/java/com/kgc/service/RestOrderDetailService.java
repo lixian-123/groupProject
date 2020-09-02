@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
+@RequestMapping("/OrderDetail")
 public class RestOrderDetailService {
     @Autowired
     OrderDetailMapper detailMapper;
@@ -26,4 +27,5 @@ public class RestOrderDetailService {
     public int updateDetail(@RequestBody OrderDetail orderDetail){
         return  detailMapper.update(orderDetail);
     }
+
 }

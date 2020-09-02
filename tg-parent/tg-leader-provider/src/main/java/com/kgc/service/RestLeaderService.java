@@ -25,6 +25,7 @@ public class RestLeaderService {
         String key="TeamGoods_"+teamOrder.getGoodsId();
         Date startTime= DateUtil.parse(teamOrder.getStartTime(),"yyyy-MM-dd hh:mm:ss");
         Date endTime=DateUtil.parse(teamOrder.getEndTime(),"yyyy-MM-dd hh:mm:ss");
+        System.out.println(startTime+","+endTime);
         long betweenTime=DateUtil.getSecond(startTime,endTime);
         if(redisUtils.set(key, JSON.toJSONString(teamOrder))){
             return redisUtils.expire(key,betweenTime);

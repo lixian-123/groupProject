@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
-@FeignClient(name = "tg-user-provider",fallback = MemberFeignClientImpl.class)
+@FeignClient(name = "tg-user-provider")
 public interface MemberFeignClient {
 
 

@@ -7,13 +7,13 @@ import java.util.Map;
 
 public interface GoodsService {
 
-    public PageUtil<Goods> getGoodsPage(Integer index,Integer size,String goodsname);
+    public PageUtil<Goods> getGoodsPage(Integer index, Integer size, String goodsname);
 
 
     public int insetGoods(Goods goods);
 
 
-    public int updateGoods( Goods goods);
+    public int updateGoods(Goods goods);
 
 
     public Goods getGoodsById(Integer goodsId);
