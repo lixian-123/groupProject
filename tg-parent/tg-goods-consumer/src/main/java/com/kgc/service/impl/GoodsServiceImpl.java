@@ -4,6 +4,7 @@ import com.kgc.feign.GoodsFeignClient;
 import com.kgc.pojo.goods.Goods;
 import com.kgc.service.GoodsService;
 import com.kgc.util.PageUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -12,6 +13,7 @@ import java.util.Map;
 @Service
 public class GoodsServiceImpl implements GoodsService {
     //调用 feign
+    @Autowired
     private GoodsFeignClient goodsFeignClient;
     @Override
     public PageUtil<Goods> getGoodsPage(Integer index,Integer size,String goodsname) {

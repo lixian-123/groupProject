@@ -23,7 +23,6 @@
     <bytecodeTargetLevel>
       <module name="tg-consumer" target="1.8" />
       <module name="tg-provider" target="1.8" />
-      <module name="tg-shopcart-consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,14 +2,23 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kgc.mapper.LeaderMapper">
 
-    <!--<select id="getAllLeader" resultType="com.kgc.pojo.Leader">
-        SELECT * FROM leader 
+    <select id="getAllLeader" resultType="com.kgc.pojo.user.Leader">
+        SELECT * FROM leader
+        <where>
+            <if test="LeaaderName !=null and LeaaderName != ''">
+                LeaaderName like concat('%',#{LeaaderName},'%')
+            </if>
+        </where>
         LIMIT ${index},${size}
     </select>
-
     <select id="getCount" resultType="int">
-        SELECT COUNT(*) FROM leader
-    </select>-->
+        SELECT count(*) FROM leader
+        <where>
+            <if test="LeaaderName !=null and LeaaderName != ''">
+                LeaaderName like concat('%',#{LeaaderName},'%')
+            </if>
+        </where>
+    </select>
 
     <select id="LeaderLogin" resultType="com.kgc.pojo.user.Leader">
         SELECT * FROM leader WHERE nickname=#{nickname} AND PASSWORD=#{passWord}
