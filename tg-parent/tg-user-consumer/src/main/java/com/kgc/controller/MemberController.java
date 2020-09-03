@@ -2,6 +2,7 @@ package com.kgc.controller;
 
 import com.kgc.pojo.user.Member;
 import com.kgc.service.MemberService;
+import com.kgc.vo.Dto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -44,6 +45,11 @@ public class MemberController {
     public Member getMemberFromRedis(String token){
         System.out.println("controller"+token);
         return  memberService.getMemberFromRedis(token);
+    }
+
+    @RequestMapping("/sendMess")
+    public Dto sendMessToLeader(String name,String number){
+        return memberService.messToRabbit(name,number);
     }
 
 

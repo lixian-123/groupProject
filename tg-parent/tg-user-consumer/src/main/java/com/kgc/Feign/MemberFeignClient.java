@@ -32,7 +32,7 @@ public interface MemberFeignClient {
     @RequestMapping("/getMemberFromRedis")
     public Member getMemberFromRedis(String token);
 
-    @RequestMapping("/pay")
-    public String aliPay(String subjectName,String orderNo,String amount);
+    /*@RequestMapping("/pay")
+    public String aliPay(String subjectName,String orderNo,String amount);*/
 
 }

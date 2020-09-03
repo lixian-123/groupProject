@@ -1,6 +1,7 @@
 package com.kgc.service;
 
 import com.kgc.pojo.user.Member;
+import com.kgc.vo.Dto;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,9 @@ public interface MemberService {
 
     public Member getMemberFromRedis(String token);
 
-    public String aliPay(String subjectName,String orderNo,String amount);
+    /*public String aliPay(String subjectName,String orderNo,String amount);*/
+
+    //用户参与团购成功后给团长提示
+    public Dto messToRabbit(String name,String number);
 
 }

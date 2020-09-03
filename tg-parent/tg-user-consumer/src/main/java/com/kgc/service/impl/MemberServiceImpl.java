@@ -1,8 +1,13 @@
 package com.kgc.service.impl;
 
 import com.kgc.Feign.MemberFeignClient;
+import com.kgc.config.RabbitConfig;
 import com.kgc.pojo.user.Member;
 import com.kgc.service.MemberService;
+import com.kgc.vo.Dto;
+import com.kgc.vo.DtoUtil;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +20,12 @@ public class MemberServiceImpl implements MemberService {
 
     @Autowired
     private MemberFeignClient memberFeignClient;
+
+    @Autowired
+    private RabbitConfig rabbitConfig;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     @Override
     public Member getLogin(String nickname,String passWord) {
@@ -51,7 +62,19 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
+    public Dto messToRabbit(String name, String number) {
+        rabbitConfig.createSGExchange();
+        rabbitTemplate.convertAndSend("SGExchangeTopics","inform.email",name+"参加了您发起的"+number+"团购");
+        return DtoUtil.returnSuccess("发送成功");
+    }
+
+    @RabbitListener(queues= "tg")
+    public void getMessFormRabbit(String mess){
+        System.out.println(mess);
+    }
+
+    /*@Override
     public String aliPay(String subjectName, String orderNo, String amount) {
         return memberFeignClient.aliPay(subjectName,orderNo,amount);
-    }
+    }*/
 }
