@@ -1,17 +1,17 @@
 package com.kgc.mapper;
-import com.kgc.pojo.user.Leader;
-import org.apache.ibatis.annotations.Mapper;
 
+import com.kgc.pojo.user.Leader;
+
+import java.util.List;
 import java.util.Map;
 
 
 public interface LeaderMapper {
 
     //分页
-    //public List<Leader> getAllLeader(Map<String, Object> param);
-    //public int getCount(Map<String, Object> param);
+    public List<Leader> getAllLeader(Map<String, Object> param);
+    public int getCount(Map<String, Object> param);
 
-    //团长登陆
     //登陆
     public Leader LeaderLogin(Map<String,Object> param);
 

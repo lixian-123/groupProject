@@ -1,0 +1,19 @@
+server:
+  port: 6002
+spring:
+  application:
+    name: tg-leader-consumer
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: false

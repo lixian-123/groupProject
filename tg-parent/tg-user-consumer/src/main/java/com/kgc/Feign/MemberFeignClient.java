@@ -1,5 +1,6 @@
 package com.kgc.Feign;
 
+import com.kgc.Feign.impl.MemberFeignClientImpl;
 import com.kgc.pojo.user.Member;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
-@FeignClient(name = "tg-user-provider")
+@FeignClient(name = "tg-user-provider",fallback = MemberFeignClientImpl.class)
 public interface MemberFeignClient {
 
 
@@ -31,7 +32,5 @@ public interface MemberFeignClient {
     @RequestMapping("/getMemberFromRedis")
     public Member getMemberFromRedis(String token);
 
-    @RequestMapping("/pay")
-    public String aliPay(String subjectName,String orderNo,String amount);
 
 }

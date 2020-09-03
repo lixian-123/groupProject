@@ -2,7 +2,6 @@ package com.kgc.service;
 
 import com.kgc.mapper.Leader_saleMapper;
 import com.kgc.pojo.leader.Leader_sale;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,5 +27,4 @@ public class RestLeaderSaleService {
     public int update(@RequestBody Leader_sale leader_sale){
         return saleMapper.update(leader_sale);
     }
-    //测试测试时
 }

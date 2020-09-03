@@ -5,7 +5,11 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
+/**
+ * 团长消息处理接口
+ */
 public interface Leader_messMapper {
     public List<Leader_mess> getAllLeaderMess(@Param("messTypeId")Integer messTypeId);
     public int add(Leader_mess leader_mess);
+
 }
