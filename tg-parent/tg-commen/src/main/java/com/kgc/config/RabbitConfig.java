@@ -35,13 +35,19 @@ public class RabbitConfig {
         return queue;
     }
 
+    /*@Bean(QUEUE_EMAIL)
+    public Queue createSGQueue(){
+        Queue queue=new Queue("sg");
+        return queue;
+    }*/
+
 
     @Bean
     public Binding bindingEmail(@Qualifier(EXCHANGE)Exchange exchange,@Qualifier(QUEUE_EMAIL)Queue queue){
         return BindingBuilder.bind(queue).to(exchange).with("inform.#.email.#").noargs();
     }
     @Bean
-    public Binding bindingSMS(@Qualifier(EXCHANGE)Exchange exchange,@Qualifier(QUEUE_SMS)Queue queue){
+    public Binding bindingSMS(@Qualifier(SGEXCHANGE)Exchange exchange,@Qualifier(QUEUE_SMS)Queue queue){
         return BindingBuilder.bind(queue).to(exchange).with("inform.#.sms.#").noargs();
     }
 

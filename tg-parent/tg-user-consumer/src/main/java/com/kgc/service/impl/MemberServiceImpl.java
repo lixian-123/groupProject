@@ -64,11 +64,11 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public Dto messToRabbit(String name, String number) {
         rabbitConfig.createSGExchange();
-        rabbitTemplate.convertAndSend("SGExchangeTopics","inform.email",name+"参加了您发起的"+number+"团购");
+        rabbitTemplate.convertAndSend("SGExchangeTopics","inform.sms",name+"参加了您发起的"+number+"团购");
         return DtoUtil.returnSuccess("发送成功");
     }
 
-    @RabbitListener(queues= "tg")
+    @RabbitListener(queues = "tg")
     public void getMessFormRabbit(String mess){
         System.out.println(mess);
     }
