@@ -1,5 +1,6 @@
 package com.kgc.feign;
 
+import com.kgc.feign.impl.LeaderSaleFeignImpl;
 import com.kgc.pojo.leader.Leader_sale;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import java.util.Map;
 
-@FeignClient(name = "tg-leader-provider")
+@FeignClient(name = "tg-leader-provider",fallback = LeaderSaleFeignImpl.class)
 public interface LeaderSaleFeign {
     @RequestMapping("showLeaderSale")
     public List<Leader_sale> getAllSale(@RequestParam Map<String,Object> map);
