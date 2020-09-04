@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "tg-leader-provider")
+@FeignClient(name = "tg-leader-provider",fallback = RedisFeign.class)
 public interface RedisFeign {
     @RequestMapping("/saveTeamRedis")
     public boolean saveTeamRedis(@RequestBody Object object);
