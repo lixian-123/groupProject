@@ -18,6 +18,7 @@ import java.util.Map;
 @Service
 public class MemberServiceImpl implements MemberService {
 
+    //789
     @Autowired
     private MemberFeignClient memberFeignClient;
 
