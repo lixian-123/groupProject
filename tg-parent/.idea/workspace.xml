@@ -1,41 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
     <list default="true" id="83d31025-7f06-49d0-911c-ef1dc8646739" name="Default Changelist" comment="lx 9:45">
-=======
-    <list default="true" id="12c96c77-0ef0-40d0-8f31-28d62535d0ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-shopcart-consumer/tg-shopcart-consumer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/AliPayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/util/AliPayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestAliPayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/util/AliPayUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
->>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/OrderDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/RetailOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/RetailOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-shopcart-consumer/src/main/java/com/kgc/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-shopcart-consumer/src/main/java/com/kgc/controller/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-shopcart-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-shopcart-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/CustController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/CustController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/LeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/LeaderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/StreamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/StreamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestLeaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestLeaderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/CustFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/CustFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/LeaderFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/LeaderFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/StreamFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/StreamFeignClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/tg-parent/tg-eureka/target/" />
@@ -70,6 +42,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="44393289">
@@ -141,33 +127,34 @@
     <session id="-1986866790">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="12" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="12" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="15" />
           <entry key="txt" value="10" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="15" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="1" />
         </counts>
@@ -193,58 +180,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< Updated upstream
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4644">
-              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-=======
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
->>>>>>> Stashed changes
+            <state relative-caret-position="324">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< Updated upstream
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/RabbitConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-=======
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="218">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="42" />
+              <folding>
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/LeaderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="33" column="66" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
               <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/RabbitConfig.java">
+        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-commen/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-<<<<<<< Updated upstream
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-=======
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
->>>>>>> Stashed changes
+            <state relative-caret-position="135">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -273,22 +298,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< Updated upstream
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/feign/TeamOrderFeign.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/vo/MqMessVo.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/controller/TeamOrderController.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/OrderService.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/OrderProviderAPP.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/config/RabbitConfig.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/feign/MemberFeignImpl.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/feign/MemberFeign.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-goods-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderService.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/feign/TeamOrderFeign.java" />
         <option value="$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/LeaderService.java" />
         <option value="$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java" />
         <option value="$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/mapper/TeamOrderMapper.xml" />
@@ -325,7 +334,6 @@
         <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/RabbitConfig.java" />
-=======
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/Category.java" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/EurekaServerApp.java" />
         <option value="$PROJECT_DIR$/tg-eureka/src/main/java/com/kgc/EurekaServerApp.java" />
@@ -338,7 +346,9 @@
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/goods/Goods.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java" />
->>>>>>> Stashed changes
+        <option value="$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java" />
+        <option value="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java" />
+        <option value="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java" />
       </list>
     </option>
   </component>
@@ -355,24 +365,15 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="tg-commen" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="tg-commen" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" extendedState="6">
-=======
-  <component name="ProjectFrameBounds" extendedState="7">
->>>>>>> Stashed changes
-    <option name="x" value="160" />
-    <option name="y" value="105" />
+    <option name="x" value="124" />
+    <option name="y" value="70" />
     <option name="width" value="1165" />
-    <option name="height" value="870" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -432,8 +433,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -444,12 +443,158 @@
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="Feign" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,19 +606,14 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< Updated upstream
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599184020384" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599188023378" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599193235364" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
->>>>>>> Stashed changes
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -494,7 +634,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderConsumerAPP">
+  <component name="RunManager" selected="Spring Boot.MyUserConsumerApp">
     <configuration name="EurekaServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tg-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.EurekaServerApp" />
@@ -614,6 +754,7 @@
       <workItem from="1599094129442" duration="16832000" />
       <workItem from="1599179969336" duration="2187000" />
       <workItem from="1599182533336" duration="1854000" />
+      <workItem from="1599189581401" duration="3484000" />
     </task>
     <task id="LOCAL-00001" summary="hxw update">
       <created>1598835125787</created>
@@ -703,20 +844,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="107509000" />
-=======
-    <option name="totallyTimeSpent" value="6700000" />
->>>>>>> Stashed changes
+    <option name="totallyTimeSpent" value="10348000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-<<<<<<< Updated upstream
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20863836" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18228404" />
->>>>>>> Stashed changes
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -726,25 +869,25 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.048158642" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.10837439" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296355" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49926794" weight="0.3296355" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" weight="0.4164306" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50073206" side_tool="true" weight="0.4183835" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.0" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49865952" weight="0.34419262" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49853587" weight="0.23296355" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49861497" visible="true" weight="7.320644E-4" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49861497" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" weight="0.329429" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -753,6 +896,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -767,36 +936,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="lx 9:45" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/controller/LeaderMessController.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/LeaderMessService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-goods-consumer/src/main/java/com/kgc/feign/CateGoryFeignClienet.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-goods-consumer/src/main/java/com/kgc/service/impl/CateGoryServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-goods-consumer/src/main/java/com/kgc/service/impl/GoodsServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/controller/TeamOrderController.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/impl/TeamOrderServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/impl/RetailOrderServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/controller/CustController.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/impl/CustFeignClientImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/impl/StreamFeignClientImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/service/impl/CustServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/service/impl/StreamServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-provider/src/main/java/com/kgc/service/RestCustodianService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-provider/src/main/java/com/kgc/service/RestStreamService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderYJFeign.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderTiHuoFeign.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderSaleFeign.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderMessServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderSaleServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderFeign.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderMessFeign.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/controller/OrderDetailController.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/OrderDetailService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/impl/OrderDetailServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/mapper/TeamOrderMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/service/RestRetailOrderService.java" />
     <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/mapper/OrderDetailMapper.java" />
     <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/OrderProviderAPP.java" />
     <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/application.yml" />
@@ -818,9 +957,7 @@
     <entry file="file://$PROJECT_DIR$/tg-commen/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-<<<<<<< Updated upstream
           <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-=======
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
@@ -861,7 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -872,24 +1008,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4644">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="351">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1458">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-eureka/src/main/java/com/kgc/EurekaServerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/MyUserProviderApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/resources/mapper/MemberMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/LeaderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="33" column="66" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

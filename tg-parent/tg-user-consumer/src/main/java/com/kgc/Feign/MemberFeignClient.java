@@ -13,7 +13,6 @@ import java.util.Map;
 @FeignClient(name = "tg-user-provider",fallback = MemberFeignClientImpl.class)
 public interface MemberFeignClient {
 
-
     @RequestMapping("/memberlogin")
     public Member getLogin(@RequestParam Map<String,Object> param);
 
