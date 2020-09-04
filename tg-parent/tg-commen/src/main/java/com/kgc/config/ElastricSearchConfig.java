@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ElastricSearchConfig {
+    //ceshi
     @Bean
     public RestHighLevelClient restHighLevelClient(){
         RestHighLevelClient client = new RestHighLevelClient(
