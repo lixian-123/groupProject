@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitConfig {
-    //声明队列
+    //声明队列ceshi
     public static final String QUEUE_Email="email";
     public static final String QUEUE_SMS="sms";
     //声明交换机
