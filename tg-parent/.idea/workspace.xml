@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12c96c77-0ef0-40d0-8f31-28d62535d0ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/LeaderFeignImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/LeaderMessFeignImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/LeaderSaleFeignImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/LeaderTiHuoFeignImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/LeaderYJFeignImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/RedisFeignImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/TeamOrderFeignImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderMessFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderMessFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderSaleFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderSaleFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderTiHuoFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderTiHuoFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderYJFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderYJFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/RedisFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/RedisFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/TeamOrderFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/TeamOrderFeign.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,14 +120,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="117" />
-          <entry key="txt" value="15" />
+          <entry key="txt" value="23" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="117" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="PLAIN_TEXT" value="23" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -165,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderTiHuoFeign.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -240,7 +226,7 @@
         <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/RedisFeignImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#237#238#0" expanded="true" />
@@ -254,7 +240,7 @@
         <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/TeamOrderFeignImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#246#247#0" expanded="true" />
@@ -509,7 +495,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599179926889" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599180699085" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -656,12 +642,20 @@
       <workItem from="1599141213911" duration="836000" />
       <workItem from="1599142948869" duration="420000" />
       <workItem from="1599143451564" duration="1607000" />
-      <workItem from="1599178671001" duration="1577000" />
+      <workItem from="1599178671001" duration="2626000" />
     </task>
+    <task id="LOCAL-00001" summary="lx update 9-4-8:44">
+      <created>1599180303349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599180303349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13072000" />
+    <option name="totallyTimeSpent" value="14121000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -695,7 +689,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32840723" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32840723" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.614897" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -717,7 +711,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lx update 21:35" />
-    <option name="LAST_COMMIT_MESSAGE" value="lx update 21:35" />
+    <MESSAGE value="lx update 9-4-8:44" />
+    <option name="LAST_COMMIT_MESSAGE" value="lx update 9-4-8:44" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tg-leader-provider/pom.xml">
@@ -1054,7 +1049,7 @@
     <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/RedisFeignImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#237#238#0" expanded="true" />
@@ -1066,7 +1061,7 @@
     <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/impl/TeamOrderFeignImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#246#247#0" expanded="true" />
@@ -1102,7 +1097,7 @@
     <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderTiHuoFeign.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
