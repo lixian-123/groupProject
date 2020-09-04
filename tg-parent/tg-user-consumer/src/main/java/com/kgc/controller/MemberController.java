@@ -2,11 +2,12 @@ package com.kgc.controller;
 
 import com.kgc.pojo.user.Member;
 import com.kgc.service.MemberService;
+import com.kgc.vo.Dto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MemberController {
@@ -46,5 +47,8 @@ public class MemberController {
         return  memberService.getMemberFromRedis(token);
     }
 
-
+    @RequestMapping("/sendMess")
+    public Dto sendMessToLeader(String name,String teamOrder){
+        return memberService.messToRabbit(name, teamOrder);
+    }
 }

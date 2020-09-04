@@ -1,5 +1,6 @@
 package com.kgc.feign;
 
+import com.kgc.feign.impl.LeaderYJFeignImpl;
 import com.kgc.pojo.leader.Leader_yongjin;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "tg-leader-provider")
+@FeignClient(name = "tg-leader-provider",fallback = LeaderYJFeignImpl.class)
 public interface LeaderYJFeign {
     @RequestMapping("/showLeaderYJ")
     public List<Leader_yongjin> getAllYongJin(@RequestParam("leaderId") Integer leaderId);

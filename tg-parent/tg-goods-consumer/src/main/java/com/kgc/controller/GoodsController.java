@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-public class GoodsController {
+public class GoodsController{
+    
     @Autowired
     private GoodsService goodsService;
 
