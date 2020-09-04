@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 @Component
 public interface OrderDetailMapper {
-    public List<OrderDetail> getAllDetail(@Param("userId") Integer userId,@Param("leaderId")Integer leaderId );
+    public List<OrderDetail> getAllDetail();
     public int add(OrderDetail orderDetail);
     public int update(OrderDetail orderDetail);
 }

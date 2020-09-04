@@ -91,10 +91,7 @@ public class RestTeamOrderService {
         }catch (Exception e){
             throw new Exception("sad");
         }
-
         try{
-
-
             if(teamOrderMapper.updateGoodsNum(map)>0){
                 OrderDetail orderDetail=new OrderDetail();
                 orderDetail.setUserId(member.getUserId());
