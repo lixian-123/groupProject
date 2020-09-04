@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "tg-user-provider",fallback = StreamFeignClientImpl.class)
+@FeignClient(name = "tg-user-provider")
 public interface StreamFeignClient {
 
     @RequestMapping("/streamid/{id}")

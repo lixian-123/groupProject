@@ -17,7 +17,7 @@ public class RestOrderDetailService {
     @RequestMapping("/showDetail")
     public List<OrderDetail> showDetail(@RequestParam("userId")Integer userId,@RequestParam("leaderId")Integer leaderId){
         System.out.println("成功");
-        return  detailMapper.getAllDetail(userId,leaderId);
+        return  detailMapper.getAllDetail();
     }
     @RequestMapping("/addDetail")
     public int addDetail(@RequestBody OrderDetail orderDetail){
