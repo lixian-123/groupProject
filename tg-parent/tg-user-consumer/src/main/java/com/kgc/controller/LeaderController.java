@@ -15,29 +15,33 @@ public class LeaderController {
     @Autowired
     private LeaderService leaderService;
 
-
-    @RequestMapping("/leaderlogin")
+    //团长登陆
+    @RequestMapping("/leaderlogin") //已测
     public Leader getleaderLogin(String nickname,String passWord){
         return leaderService.getleaderLogin(nickname,passWord);
     }
 
-    @RequestMapping("/leaderid/{id}")
+    //查询团长详细信息
+    @RequestMapping("/leaderid/{id}") //已测
     public Leader getLeaderById(@PathVariable("id") Integer id){
         return leaderService.getLeaderById(id);
     }
 
-    @RequestMapping("/leaderupdate")
+    //修改团长信息
+    @RequestMapping("/leaderupdate") //已测
     public int update( @RequestBody Leader leader){
         return leaderService.update(leader);
     }
 
-    @RequestMapping("/leaderadd")
+    //添加团长
+    @RequestMapping("/leaderadd") //已测
     public int add(@RequestBody Leader leader){
         return leaderService.add(leader);
     }
 
 
-    @RequestMapping("/leaderdelete/{id}")
+    //删除团长
+    @RequestMapping("/leaderdelete/{id}") //已测
     public int delete(@PathVariable("id") Integer id){
         return leaderService.delete(id);
     }
