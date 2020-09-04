@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d31025-7f06-49d0-911c-ef1dc8646739" name="Default Changelist" comment="lx 9:45">
+    <list default="true" id="83d31025-7f06-49d0-911c-ef1dc8646739" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/CustFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/CustFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/LeaderFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/LeaderFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/StreamFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tg-user-consumer/target/classes/com/kgc/Feign/StreamFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_mess.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_mess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_yongjin.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_yongjin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-goods-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-goods-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/service/RestGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/service/RestGoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-goods-provider/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-goods-provider/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderMessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderMessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_messMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_messMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_saleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_saleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_tihuoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_tihuoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_yongjinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_yongjinMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderMessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderMessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderSaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderSaleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderTiHuoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderTiHuoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderYJService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderYJService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_messMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_messMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_saleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_saleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_tihuoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_tihuoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_yongjinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_yongjinMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tg-shopcart-consumer/tg-shopcart-consumer.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/tg-parent/tg-eureka/target/" />
@@ -135,28 +153,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
-          <entry key="xml" value="3" />
+          <entry key="class" value="1" />
+          <entry key="java" value="89" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
-          <entry key="XML" value="3" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="89" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15" />
-          <entry key="txt" value="10" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="1297" />
+          <entry key="txt" value="15" />
+          <entry key="xml" value="509" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="1297" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="SQL" value="46" />
+          <entry key="XML" value="463" />
         </counts>
       </usages-collector>
     </session>
@@ -181,95 +202,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java">
+        <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderMessService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="1161">
+              <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
               <folding>
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1333#1334#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1493#1494#0" expanded="true" />
+                <element signature="e#1536#1537#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java">
+        <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderSaleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="162">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/LeaderService.java">
+        <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="-103">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderTiHuoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderYJService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="216">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_messMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="33" column="66" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="324">
+              <caret line="58" column="49" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -298,27 +289,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/LeaderService.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/mapper/TeamOrderMapper.xml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/pojo/order/TeamOrder.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/util/RedisUtils.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-leader-consumer/src/main/java/com/kgc/controller/LeaderController.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/util/RedisDataSourceTransaction.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/TeamOrderService.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/impl/TeamOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-commen/pom.xml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/mapper/TeamOrderMapper.java" />
-        <option value="$PROJECT_DIR$/tg-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-goods-provider/src/main/java/com/kgc/mapper/CategoryMapper.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-goods-provider/src/main/java/com/kgc/mapper/GoodsMapper.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-goods-consumer/src/main/java/com/kgc/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/CustFeignClient.java" />
         <option value="$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java" />
         <option value="$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/StreamFeignClient.java" />
         <option value="$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/service/RestTeamOrderService.java" />
@@ -341,7 +311,6 @@
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/Goods.java" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/order/OrderDetail.java" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/user/Custodian.java" />
-        <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_mess.java" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/goods/Category.java" />
         <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/goods/Goods.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -349,6 +318,28 @@
         <option value="$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java" />
         <option value="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java" />
         <option value="$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java" />
+        <option value="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/GoodsMapper.java" />
+        <option value="$PROJECT_DIR$/tg-goods-provider/src/main/resources/mapper/Goodsmapper.xml" />
+        <option value="$PROJECT_DIR$/tg-goods-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/service/RestGoodsService.java" />
+        <option value="$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/RetailOrderController.java" />
+        <option value="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderMessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderSaleService.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_messMapper.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_messMapper.xml" />
+        <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_mess.java" />
+        <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_sale.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_saleMapper.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_saleMapper.xml" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_tihuoMapper.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_tihuoMapper.xml" />
+        <option value="$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_yongjin.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_yongjinMapper.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_yongjinMapper.xml" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderMessService.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderYJService.java" />
+        <option value="$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderTiHuoService.java" />
       </list>
     </option>
   </component>
@@ -443,25 +434,25 @@
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -469,7 +460,63 @@
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-commen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="leader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-goods-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-goods-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-goods-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-goods-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-goods-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -478,38 +525,42 @@
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="Feign" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="Feign" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -519,63 +570,62 @@
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kgc" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -583,7 +633,7 @@
             <path>
               <item name="tg-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="tg-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="tg-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="tg-leader-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -606,14 +656,14 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599193235364" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599221382177" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -634,7 +684,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MyUserConsumerApp">
+  <component name="RunManager" selected="Spring Boot.MyUserProviderApp">
     <configuration name="EurekaServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tg-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.EurekaServerApp" />
@@ -754,7 +804,7 @@
       <workItem from="1599094129442" duration="16832000" />
       <workItem from="1599179969336" duration="2187000" />
       <workItem from="1599182533336" duration="1854000" />
-      <workItem from="1599189581401" duration="3484000" />
+      <workItem from="1599189581401" duration="19579000" />
     </task>
     <task id="LOCAL-00001" summary="hxw update">
       <created>1598835125787</created>
@@ -840,11 +890,18 @@
       <option name="project" value="LOCAL" />
       <updated>1599183946988</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lx 12:21">
+      <created>1599193303114</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599193303114</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10348000" />
+    <option name="totallyTimeSpent" value="26443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,9 +914,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2708018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -869,7 +925,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.10837439" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -933,71 +989,98 @@
     <MESSAGE value="lx 9:24" />
     <MESSAGE value="lx 9:44" />
     <MESSAGE value="lx 9:45" />
-    <option name="LAST_COMMIT_MESSAGE" value="lx 9:45" />
+    <MESSAGE value="lx 12:21" />
+    <option name="LAST_COMMIT_MESSAGE" value="lx 12:21" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/mapper/OrderDetailMapper.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/OrderProviderAPP.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/resources/mapper/OrderDetailMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/service/RestOrderDetailService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/src/main/java/com/kgc/service/RestOrderService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-provider/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/servie/impl/OrderServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/service/LeaderService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-provider/src/main/java/com/kgc/service/RestLeaderService.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/impl/LeaderFeignClientImpl.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/OrderConsumerAPP.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/src/main/java/com/kgc/controller/OrderController.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/config/RabbitConfig.java" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-order-consumer/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/tg-parent/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/pom.xml">
+    <entry file="file://$PROJECT_DIR$/tg-goods-provider/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="959">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-provider/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/tg-consumer/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/TeamOrder.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/RetailOrder.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/OrderType.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/OrderState.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/OrderDetail.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/Custodian.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/EurekaServerApp.java" />
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/Category.java" />
-    <entry file="file://$PROJECT_DIR$/tg-eureka/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/servie/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="-1134">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-eureka/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.6.1/elasticsearch-rest-high-level-client-7.6.1.jar!/org/elasticsearch/client/RestHighLevelClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="279" lean-forward="true" selection-start-line="279" selection-end-line="279" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-order-provider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/tg-order-provider/src/main/java/com/kgc/service/RestOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="243">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/Goods.java" />
-    <entry file="file://$PROJECT_DIR$/tg-order-consumer/pom.xml">
+    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="216">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/OrderDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/TeamOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/controller/RetailOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-order-consumer/src/main/java/com/kgc/feign/OrderDetailFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/LeaderSaleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-order-provider/src/main/java/com/kgc/service/RestTeamOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="33" column="66" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/LeaderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1008,31 +1091,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/config/ElastricSearchConfig.java">
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="-148">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        <state relative-caret-position="327">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/controller/LeaderYJController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/controller/LeaderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/controller/LeaderMessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderMessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tg-eureka/src/main/java/com/kgc/EurekaServerApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1043,84 +1161,248 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/MyUserConsumerApp.java">
+    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestAliPayService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="400">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/resources/mapper/MemberMapper.xml">
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/LeaderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/LeaderService.java">
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/RedisFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderMessFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderTiHuoFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/feign/LeaderYJFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_mess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_messtype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_sale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-consumer/src/main/java/com/kgc/service/LeaderMessService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/LeaderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_saleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_messMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_saleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_tihuoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_tihuoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-commen/src/main/java/com/kgc/pojo/leader/Leader_yongjin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_yongjinMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/MemberService.java">
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/resources/mapper/Leader_yongjinMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="378">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/service/impl/MemberServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/mapper/GoodsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="324">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-provider/src/main/java/com/kgc/service/RestMemberService.java">
+    <entry file="file://$PROJECT_DIR$/tg-goods-provider/src/main/java/com/kgc/service/RestGoodsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="33" column="66" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="66" />
+        <state relative-caret-position="394">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="42" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/impl/MemberFeignClientImpl.java">
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/mapper/Leader_messMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="324">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/LeaderFeignClient.java">
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderMessService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/Feign/MemberFeignClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tg-user-consumer/src/main/java/com/kgc/controller/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="1161">
+          <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
           <folding>
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderSaleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderYJService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tg-leader-provider/src/main/java/com/kgc/service/RestLeaderTiHuoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

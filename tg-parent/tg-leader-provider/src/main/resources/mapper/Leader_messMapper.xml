@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kgc.mapper.Leader_messMapper">
-    <select id="getAllLeaderMess" resultType="com.kgc.pojo.leader.Leader_mess">
-        select * from Leader_mess where messTypeId=#{messTypeId}
+    <select id="getAllMessPage" resultType="com.kgc.pojo.leader.Leader_mess">
+        SELECT * FROM leader_mess
+        <where>
+            <if test="LeaderId !=null and LeaderId !=''">
+                LeaderId=#{LeaderId}
+            </if>
+        </where>
+        LIMIT ${index},${size}
     </select>
-    <update id="add" parameterType="com.kgc.pojo.leader.Leader_mess">
-        insert into Leader_mess values(null,#{mess},#{messTypeId})
+
+    <select id="getCount" resultType="int">
+        SELECT count(*) FROM leader_mess
+        <where>
+            <if test="LeaderId !=null and LeaderId !=''">
+                LeaderId=#{LeaderId}
+            </if>
+        </where>
+    </select>
+
+    <insert id="addMess" parameterType="com.kgc.pojo.leader.Leader_mess">
+        insert into leader_mess values
+        (null,#{content},now(),#{MemberId},#{LeaderId})
+    </insert>
+
+    <select id="getMessById" resultType="com.kgc.pojo.leader.Leader_mess">
+        SELECT * FROM leader_mess
+        WHERE id=#{id}
+    </select>
+
+    <update id="updateMess" parameterType="com.kgc.pojo.leader.Leader_mess">
+        update leader_mess set
+        (
+            content=#{content},
+            time=#{time},
+            MemberId=#{MemberId},
+            LeaderId=#{LeaderId}
+        )
+            where id=#{id}
     </update>
 
+    <delete id="delMess" parameterType="int">
+        DELETE FROM leader_mess WHERE id=#{id}
+    </delete>
+
+    <select id="getAllMess" resultType="com.kgc.pojo.leader.Leader_mess">
+        SELECT * FROM leader_mess
+    </select>
 </mapper>

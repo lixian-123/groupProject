@@ -14,16 +14,5 @@ import java.util.List;
 public class RestLeaderYJService {
     @Autowired
     Leader_yongjinMapper yongjinMapper;
-    @RequestMapping("/showLeaderYJ")
-    public List<Leader_yongjin> getAllYongJin(@RequestParam("leaderId") Integer leaderId){
-        return yongjinMapper.getAllYongJin(leaderId);
-    }
-    @RequestMapping("/addLeaderYJ")
-    public int add(@RequestBody Leader_yongjin leader_yongjin){
-        return yongjinMapper.add(leader_yongjin);
-    }
-    @RequestMapping("/updateLeaderYJ")
-    public int update(@RequestBody Leader_yongjin leader_yongjin){
-        return yongjinMapper.update(leader_yongjin);
-    }
+
 }

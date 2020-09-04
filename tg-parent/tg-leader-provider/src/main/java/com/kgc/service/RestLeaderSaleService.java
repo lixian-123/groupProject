@@ -13,18 +13,5 @@ import java.util.Map;
 
 @RestController
 public class RestLeaderSaleService {
-    @Autowired
-    Leader_saleMapper saleMapper;
-    @RequestMapping("showLeaderSale")
-    public List<Leader_sale> getAllSale(@RequestParam Map<String,Object> map){
-        return saleMapper.getAllSale(map);
-    }
-    @RequestMapping("addLeaderSale")
-    public int add(@RequestBody Leader_sale leader_sale){
-        return saleMapper.add(leader_sale);
-    }
-    @RequestMapping("updateLeaderSale")
-    public int update(@RequestBody Leader_sale leader_sale){
-        return saleMapper.update(leader_sale);
-    }
+
 }

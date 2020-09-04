@@ -9,24 +9,25 @@ public class Leader_sale implements Serializable {
     //业绩信息表id
     private Integer id;
     //团长id
-    private Integer leaderId;
-    //今日提成
-    private double ticheng;
-    //今日订单数
+    private Integer LeaderId;
+    //提成
+    private double Ticheng;
+    //订单号
     private Integer dingdan;
-    //今日销售额
-    private double salemoney;
-    //今日日期
-    private String todayTime;
+    //销售额
+    private double Salemoney;
+    private String data;
 
     public Leader_sale() {
     }
 
-    public Leader_sale(Integer id, double ticheng, Integer dingdan, double salemoney) {
+    public Leader_sale(Integer id, Integer leaderId, double ticheng, Integer dingdan, double salemoney, String data) {
         this.id = id;
-        this.ticheng = ticheng;
+        LeaderId = leaderId;
+        Ticheng = ticheng;
         this.dingdan = dingdan;
-        this.salemoney = salemoney;
+        Salemoney = salemoney;
+        this.data = data;
     }
 
     public Integer getId() {
@@ -37,12 +38,20 @@ public class Leader_sale implements Serializable {
         this.id = id;
     }
 
+    public Integer getLeaderId() {
+        return LeaderId;
+    }
+
+    public void setLeaderId(Integer leaderId) {
+        LeaderId = leaderId;
+    }
+
     public double getTicheng() {
-        return ticheng;
+        return Ticheng;
     }
 
     public void setTicheng(double ticheng) {
-        this.ticheng = ticheng;
+        Ticheng = ticheng;
     }
 
     public Integer getDingdan() {
@@ -54,26 +63,18 @@ public class Leader_sale implements Serializable {
     }
 
     public double getSalemoney() {
-        return salemoney;
+        return Salemoney;
     }
 
     public void setSalemoney(double salemoney) {
-        this.salemoney = salemoney;
+        Salemoney = salemoney;
     }
 
-    public Integer getLeaderId() {
-        return leaderId;
+    public String getData() {
+        return data;
     }
 
-    public void setLeaderId(Integer leaderId) {
-        this.leaderId = leaderId;
-    }
-
-    public String getTodayTime() {
-        return todayTime;
-    }
-
-    public void setTodayTime(String todayTime) {
-        this.todayTime = todayTime;
+    public void setData(String data) {
+        this.data = data;
     }
 }

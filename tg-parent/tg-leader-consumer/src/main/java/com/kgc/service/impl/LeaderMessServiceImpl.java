@@ -23,6 +23,7 @@ public class LeaderMessServiceImpl implements LeaderMessService {
     }
 
 
+    //监听用户发送的消息
     @RabbitListener(queues ="lm")
     public void getMessFromRabbi(String mess) {
         System.out.println(mess);

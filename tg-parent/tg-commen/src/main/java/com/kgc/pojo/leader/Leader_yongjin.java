@@ -12,7 +12,7 @@ public class Leader_yongjin implements Serializable {
     private Integer leaderId;
     //账号余额
     private double balance;
-    //已提余额
+    //已提金额
     private double Lastcharges;
 
 

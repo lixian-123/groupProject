@@ -20,4 +20,6 @@ public interface GoodsMapper {
     //更新商品
     int updateGoods(Goods goods);
 
+    //获取所有商品
+    List<Goods> getAllGoods();
 }
