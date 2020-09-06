@@ -58,5 +58,5 @@ public class RestGoodsService {
         int num=teamOrder.getGoodsNumber();
         return num;
     }
-}
+
 }

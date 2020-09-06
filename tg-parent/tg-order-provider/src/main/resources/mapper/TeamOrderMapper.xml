@@ -17,9 +17,9 @@
         select version from teamorder where teamId=#{teamId}
     </select>
     <update id="updateGoodsNum" parameterType="java.util.Map">
-        update teamorder set goodsNumber=#{goodsNumber},version=version+1 where teamId=#{teamId} and version=#{versionValue}
+        update teamorder set goodsNumber=#{goodsNumber},version=version+1 where teamId=#{teamId} and goodsId=#{goodsId} and version=#{versionValue}
     </update>
     <select id="getTeamOrder" resultType="com.kgc.pojo.order.TeamOrder">
-        select * from teamorder where startTime=#{startTime} and endTime=#{endTime}
+        select * from teamorder where teamid=#{teamId}
     </select>
 </mapper>

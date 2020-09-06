@@ -1,9 +1,10 @@
 package com.kgc.mapper;
 
 import com.kgc.pojo.leader.Leader_yongjin;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-
+@Mapper
 public interface Leader_yongjinMapper {
     public List<Leader_yongjin> getAllYongJin(Integer leaderId);
     public int add(Leader_yongjin leader_yongjin);

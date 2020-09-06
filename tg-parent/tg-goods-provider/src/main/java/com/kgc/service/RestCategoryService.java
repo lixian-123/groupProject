@@ -16,6 +16,6 @@ public class RestCategoryService {
     private CategoryMapper categoryMapper;
     @RequestMapping("/getCategory")
     public List<Category> getAllCategry(){
-        return categoryMapper.getAllCategory();
+        return categoryMapper.getAllCategry();
     }
 }

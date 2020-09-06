@@ -23,9 +23,7 @@ eureka:
 feign:
   hystrix:
     enabled: false
-  client:
-    config:
-      default:
-        connectTimeout: 20000
-        readTimeout: 20000
+ribbon:
+  ReadTimeout: 20000
+
 
