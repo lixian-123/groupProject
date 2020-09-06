@@ -23,4 +23,6 @@ public interface TeamOrderFeign {
     public int getVersion(@RequestParam("teamId")Integer teamId);
     @RequestMapping("/updateGoodsNum")
     public int updateGoodsNum(@RequestParam Map<String,Object> map);
+    @RequestMapping("/getTeamOrder")
+    public TeamOrder getTeamOrder(@RequestParam("teamId")Integer teamId);
 }

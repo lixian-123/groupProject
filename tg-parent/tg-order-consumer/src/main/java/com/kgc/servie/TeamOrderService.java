@@ -11,5 +11,4 @@ public interface TeamOrderService {
     public int add(TeamOrder teamOrder);
     public int update(TeamOrder teamOrder);
     public int delete(Integer teamId);
-    public int updateGoodsNum(Map<String,Object> map);
 }

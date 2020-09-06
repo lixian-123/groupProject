@@ -47,50 +47,6 @@ public class TeamOrderServiceImpl implements TeamOrderService {
         return 0;
     }
 
-    @Override
-    public int updateGoodsNum(Map<String, Object> map) {
-        String mqJson=map.get("mqMessVo").toString();
-        MqMessVo mqMessVo= JSON.parseObject(mqJson,MqMessVo.class);
-        String memberJson=map.get("member").toString();
-        Member member=JSON.parseObject(memberJson,Member.class);
-        String key="TeamGoods_"+mqMessVo.getGoodsId();
-        String TeamJson=redisUtils.get(key).toString();
-        TeamOrder teamOrder= JSON.parseObject(TeamJson,TeamOrder.class);
-        int versionValue=teamOrderFeign.getVersion(teamOrder.getTeamId());
-        Map<String,Object> teamMap=new HashMap<>();
-        teamMap.put("teamId",teamOrder.getTeamId());
-        teamMap.put("versionValue",versionValue);
-        teamMap.put("goodsNumber",teamOrder.getGoodsNumber()-mqMessVo.getGoodsNum());
-        Map<String,Object> DetailMap=new HashMap<>();
-        DetailMap.put("UserId",member.getUserId());
-        DetailMap.put("goodsId",teamOrder.getGoodsId());
-        DetailMap.put("goodsNum",mqMessVo.getGoodsNum());
-        DetailMap.put("leaderId",teamOrder.getLeaderId());
-        DetailMap.put("sumMoney",mqMessVo.getSumMoney());
-        try {
-            this.updateTeam(teamMap,DetailMap);
-            return 1;
-        }catch (Exception e){
-            return 0;
-        }
-    }
-    @Transactional(rollbackFor = Exception.class)
-    public void updateTeam(Map<String,Object> teamMap,Map<String,Object> DetailMap){
-        try{
-            teamOrderFeign.updateGoodsNum(teamMap);
-            OrderDetail orderDetail=new OrderDetail();
-            orderDetail.setUserId(Integer.parseInt(DetailMap.get("UserId").toString()));
-            orderDetail.setGoodsId(Integer.parseInt(DetailMap.get("goodsId").toString()));
-            orderDetail.setGoodsNumber(Integer.parseInt(DetailMap.get("goodsNum").toString()));
-            orderDetail.setLeaderId(Integer.parseInt(DetailMap.get("leaderId").toString()));
-            orderDetail.setSumMoney(Double.parseDouble(DetailMap.get("sumMoney").toString()));
-            orderDetail.setOrderState(1);
-            orderDetail.setOrderType(1);
-            orderDetailFeign.addDetail(orderDetail);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
-    }
 
 }

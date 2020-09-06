@@ -44,8 +44,8 @@ public class RestTeamOrderService {
         return  teamOrderMapper.getAllTeam(leaderId);
     }
     @RequestMapping("/getTeamOrder")
-    public TeamOrder getTeamOrder(@RequestParam("startTime")String startTime,@RequestParam("endTime")String endTime){
-        return teamOrderMapper.getTeamOrder(startTime, endTime);
+    public TeamOrder getTeamOrder(@RequestParam("teamId")Integer teamId){
+        return teamOrderMapper.getTeamOrder(teamId);
     }
     @RequestMapping("/addTeam")
     public int addTeam(@RequestBody TeamOrder teamOrder){
@@ -64,35 +64,34 @@ public class RestTeamOrderService {
         return  teamOrderMapper.getVersion(teamId);
     }
 
+    //修改库存
     @Transactional(rollbackFor = Exception.class)//开启事务注解
     @RequestMapping("/updateGoodsNum")
     public int updateGoodsNum(@RequestParam Map<String,Object> map) throws Exception{
-
-        TransactionStatus transactionStatus=null;
-        String mqJson=(String) map.get("mqMessVo");
+        //从map中得到类MqMessVo的JSON字符串
+        String mqJson=map.get("mqMessVo").toString();
+        //JSON字符串转为类对象
         MqMessVo mqMessVo=JSON.parseObject(mqJson,MqMessVo.class);
-        String memberJson=(String)map.get("member");
+        //从map中得到用户的信息
+        String memberJson=map.get("member").toString();
         Member member=JSON.parseObject(memberJson,Member.class);
-        String token=(String)map.get("token");
+        //从map中得到token
+        String token=map.get("token").toString();
+        //得到redis的key值
         String key="TeamGoods_"+mqMessVo.getGoodsId();
         System.out.println(key+","+token);
         String TeamJson=redisUtils.get(key).toString();
         TeamOrder teamOrder= JSON.parseObject(TeamJson,TeamOrder.class);
+        //根据团长id和商品id得到当前团购商品
         int versionValue=teamOrderMapper.getVersion(teamOrder.getTeamId());
-        map.put("teamId",teamOrder.getTeamId());
-        map.put("versionValue",versionValue);
-        map.put("goodsNumber",teamOrder.getGoodsNumber());
+        System.out.println(versionValue);
+        HashMap<String, Object> upMap = new HashMap<>();
+        upMap.put("teamId",teamOrder.getTeamId());
+        upMap.put("versionValue",versionValue);
+        upMap.put("goodsId",teamOrder.getGoodsId());
+        upMap.put("goodsNumber",teamOrder.getGoodsNumber()-mqMessVo.getGoodsNum());
         try{
-            transactionStatus=redisDataSourceTransaction.begin();
-            //更改redis缓存的数据
-            teamOrder.setGoodsNumber(teamOrder.getGoodsNumber()-mqMessVo.getGoodsNum());
-            teamOrder.setVersion(teamOrder.getVersion()+1);
-            redisTemplate.opsForValue().set(key,JSON.toJSONString(teamOrder));
-        }catch (Exception e){
-            throw new Exception("sad");
-        }
-        try{
-            if(teamOrderMapper.updateGoodsNum(map)>0){
+            if(teamOrderMapper.updateGoodsNum(upMap)>0){
                 OrderDetail orderDetail=new OrderDetail();
                 orderDetail.setUserId(member.getUserId());
                 orderDetail.setGoodsId(teamOrder.getGoodsId());
@@ -102,6 +101,8 @@ public class RestTeamOrderService {
                 orderDetail.setOrderState(1);
                 orderDetail.setOrderType(1);
                 detailMapper.add(orderDetail);
+                Thread.sleep(1000*10);
+                redisTemplate.delete(key);
             }
         }catch (Exception e){
             e.printStackTrace();

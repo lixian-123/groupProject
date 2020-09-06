@@ -21,5 +21,4 @@
         SELECT SUM(Ticheng) FROM leader_sale
         WHERE DATE_FORMAT( DATA,'%Y%m') = DATE_FORMAT( CURDATE( ),'%Y%m')
     </select>
-
 </mapper>

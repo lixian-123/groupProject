@@ -1,9 +1,10 @@
 package com.kgc.mapper;
 
 import com.kgc.pojo.leader.Leader_yongjin;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-
+@Mapper
 /**
  * 团长佣金处理接口
  */
