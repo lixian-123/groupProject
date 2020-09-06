@@ -4,7 +4,7 @@
     <select id="getAllSale" resultType="com.kgc.pojo.leader.Leader_sale">
         SELECT * FROM leader_sale
         <where>
-            <if test="LeaderId ! null and LeaderId !='' ">
+            <if test="LeaderId != null and LeaderId !='' ">
                 LeaderId=#{LeaderId}
             </if>
         </where>
@@ -13,7 +13,7 @@
     <select id="getCount" resultType="int">
         SELECT count(*) FROM leader_sale
         <where>
-            <if test="LeaderId ! null and LeaderId !='' ">
+            <if test="LeaderId != null and LeaderId !='' ">
                 LeaderId=#{LeaderId}
             </if>
         </where>
@@ -24,18 +24,19 @@
       (NULL,#{LeaderId},#{Ticheng},#{Dingdan},#{Salemoney},NOW())
     </insert>
 
-    <select id="getSaleById" parameterType="int">
+    <select id="getSaleById" resultType="com.kgc.pojo.leader.Leader_sale">
         SELECT * FROM leader_sale
         where id=#{id}
     </select>
 
     <update id="update" parameterType="com.kgc.pojo.leader.Leader_sale">
-        UPDATE TABLE leader_sale SET
-        (LeaderId=#{LeaderId},
+        UPDATE leader_sale SET
+        LeaderId=#{LeaderId},
         Ticheng=#{Ticheng},
         Dingdan=#{Dingdan},
         Salemoney=#{Salemoney},
-        data=#{data})
+        data=#{data}
+        where id=#{id}
     </update>
 
     <select id="getTichengToday" resultType="string">

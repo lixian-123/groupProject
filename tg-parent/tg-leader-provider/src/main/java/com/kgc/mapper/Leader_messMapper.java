@@ -1,7 +1,7 @@
 package com.kgc.mapper;
 
 import com.kgc.pojo.leader.Leader_mess;
-import org.apache.ibatis.annotations.Param;
+
 
 import java.util.List;
 import java.util.Map;
@@ -12,17 +12,17 @@ import java.util.Map;
 public interface Leader_messMapper {
     /**
      *  消息分页显示数据
-     * @param param
+     * @param map
      * @return
      */
-    List<Leader_mess> getAllMessPage(Map<String,Object> param);
+    List<Leader_mess> getAllMessPage(Map<String,Object> map);
 
     /**
      * 消息总条数
-     * @param param
+     * @param map
      * @return
      */
-    int getCount(Map<String,Object> param);
+    int getCount(Map<String,Object> map);
 
     /**
      * 消息添加

@@ -32,13 +32,11 @@
 
     <update id="updateMess" parameterType="com.kgc.pojo.leader.Leader_mess">
         update leader_mess set
-        (
-            content=#{content},
-            time=#{time},
-            MemberId=#{MemberId},
-            LeaderId=#{LeaderId}
-        )
-            where id=#{id}
+        content=#{content},
+        time=#{time},
+        MemberId=#{MemberId},
+        LeaderId=#{LeaderId}
+        where id=#{id}
     </update>
 
     <delete id="delMess" parameterType="int">
@@ -46,6 +44,6 @@
     </delete>
 
     <select id="getAllMess" resultType="com.kgc.pojo.leader.Leader_mess">
-        SELECT * FROM leader_mess
+        SELECT * FROM leader_mess where LeaderId=#{LeaderId}
     </select>
 </mapper>

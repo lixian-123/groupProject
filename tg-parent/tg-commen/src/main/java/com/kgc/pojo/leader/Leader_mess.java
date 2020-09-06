@@ -14,18 +14,18 @@ public class Leader_mess implements Serializable {
     private Integer messTypeId;
     private String time;
     private Integer MemberId;
-    private Integer Leader;
+    private Integer LeaderId;
 
     public Leader_mess() {
     }
 
-    public Leader_mess(Integer id, String content, Integer messTypeId, String time, Integer memberId, Integer leader) {
+    public Leader_mess(Integer id, String content, Integer messTypeId, String time, Integer memberId, Integer leaderId) {
         this.id = id;
         this.content = content;
         this.messTypeId = messTypeId;
         this.time = time;
         MemberId = memberId;
-        Leader = leader;
+        LeaderId = leaderId;
     }
 
     public Integer getId() {
@@ -68,11 +68,11 @@ public class Leader_mess implements Serializable {
         MemberId = memberId;
     }
 
-    public Integer getLeader() {
-        return Leader;
+    public Integer getLeaderId() {
+        return LeaderId;
     }
 
-    public void setLeader(Integer leader) {
-        Leader = leader;
+    public void setLeaderId(Integer leaderId) {
+        LeaderId = leaderId;
     }
 }

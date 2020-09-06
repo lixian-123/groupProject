@@ -10,10 +10,10 @@ import java.util.List;
 public interface Leader_yongjinMapper {
     /**
      * 查询某个团长的佣金信息
-     * @param leader
+     * @param leaderId
      * @return
      */
-    Leader_yongjin getYongJinByLeader(Integer leader);
+    Leader_yongjin getYongJinByLeader(Integer leaderId);
 
     /**
      * 更改某个团长的佣金
@@ -28,4 +28,8 @@ public interface Leader_yongjinMapper {
      * @return
      */
     int insertYongJin(Leader_yongjin yongjin);
+
+
+
+
 }

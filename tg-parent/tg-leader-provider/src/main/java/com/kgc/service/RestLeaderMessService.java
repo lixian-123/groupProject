@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ import java.util.Map;
 @CrossOrigin
 public class RestLeaderMessService {
 
-    @Autowired
+    @Resource
     private Leader_messMapper messMapper;
 
     @RequestMapping("/getMessPage")

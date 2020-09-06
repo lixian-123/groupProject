@@ -8,18 +8,19 @@ import java.util.List;
 
 @Component
 public class LeaderYJFeignImpl implements LeaderYJFeign{
+
     @Override
-    public List<Leader_yongjin> getAllYongJin(Integer leaderId) {
+    public Leader_yongjin getYongJinByLeader(Integer leaderId) {
         return null;
     }
 
     @Override
-    public int add(Leader_yongjin leader_yongjin) {
+    public int updateYongjin(Leader_yongjin yongjin) {
         return 0;
     }
 
     @Override
-    public int update(Leader_yongjin leader_yongjin) {
+    public int addYongjin(Leader_yongjin yongjin) {
         return 0;
     }
 }

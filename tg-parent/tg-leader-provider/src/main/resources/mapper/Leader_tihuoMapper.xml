@@ -22,4 +22,8 @@
     <insert id="add" parameterType="com.kgc.pojo.leader.Leader_tihuo">
         insert into Leader_tihuo values(null,#{leaderId},#{orderId},now())
     </insert>
+
+    <delete id="delTihuo" parameterType="int">
+        delete from Leader_tihuo where id=#{id}
+    </delete>
 </mapper>

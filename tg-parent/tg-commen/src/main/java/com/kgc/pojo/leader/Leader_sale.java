@@ -13,7 +13,7 @@ public class Leader_sale implements Serializable {
     //提成
     private double Ticheng;
     //订单号
-    private Integer dingdan;
+    private Integer Dingdan;
     //销售额
     private double Salemoney;
     private String data;
@@ -21,11 +21,11 @@ public class Leader_sale implements Serializable {
     public Leader_sale() {
     }
 
-    public Leader_sale(Integer id, Integer leaderId, double ticheng, Integer dingdan, double salemoney, String data) {
+    public Leader_sale(Integer id, Integer leaderId, double ticheng, Integer Dingdan, double salemoney, String data) {
         this.id = id;
         LeaderId = leaderId;
         Ticheng = ticheng;
-        this.dingdan = dingdan;
+        this.Dingdan = Dingdan;
         Salemoney = salemoney;
         this.data = data;
     }
@@ -55,11 +55,11 @@ public class Leader_sale implements Serializable {
     }
 
     public Integer getDingdan() {
-        return dingdan;
+        return Dingdan;
     }
 
-    public void setDingdan(Integer dingdan) {
-        this.dingdan = dingdan;
+    public void setDingdan(Integer Dingdan) {
+        this.Dingdan = Dingdan;
     }
 
     public double getSalemoney() {

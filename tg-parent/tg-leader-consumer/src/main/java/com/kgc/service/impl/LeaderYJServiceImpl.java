@@ -11,18 +11,19 @@ import java.util.List;
 public class LeaderYJServiceImpl implements LeaderYJService {
     @Autowired
     LeaderYJFeign yjFeign;
+
     @Override
-    public List<Leader_yongjin> getAllYongJin(Integer leaderId) {
-        return yjFeign.getAllYongJin(leaderId);
+    public Leader_yongjin getYongJinByLeader(Integer leaderId) {
+        return yjFeign.getYongJinByLeader(leaderId);
     }
 
     @Override
-    public int add(Leader_yongjin leader_yongjin) {
-        return yjFeign.add(leader_yongjin);
+    public int updateYongjin(Leader_yongjin yongjin) {
+        return yjFeign.updateYongjin(yongjin);
     }
 
     @Override
-    public int update(Leader_yongjin leader_yongjin) {
-        return yjFeign.update(leader_yongjin);
+    public int addYongjin(Leader_yongjin yongjin) {
+        return yjFeign.addYongjin(yongjin);
     }
 }
