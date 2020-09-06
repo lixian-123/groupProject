@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-
+@Component
 public class MemberFeignClientImpl implements MemberFeignClient {
     @Override
     public Member getLogin(Map<String, Object> param) {
@@ -35,6 +35,11 @@ public class MemberFeignClientImpl implements MemberFeignClient {
 
     @Override
     public Member getMemberFromRedis(String token) {
+        return null;
+    }
+
+    @Override
+    public String aliPay(String subjectName, String orderNo, String amount) {
         return null;
     }
 
