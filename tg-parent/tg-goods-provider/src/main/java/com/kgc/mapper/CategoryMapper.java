@@ -7,5 +7,6 @@ import java.util.List;
 public interface CategoryMapper {
     //获取所有商品分类
     List<Category> getAllCategry();
+}
 
 
