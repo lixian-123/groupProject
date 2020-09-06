@@ -2,6 +2,13 @@ package com.kgc.mapper;
 
 import com.kgc.pojo.leader.Leader_tihuo;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+@Mapper
+
+
 import java.util.List;
 import java.util.Map;
 

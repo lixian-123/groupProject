@@ -37,6 +37,11 @@ public class RestLeaderMessService {
     @RequestMapping("/getMessById/{id}")
     public Leader_mess getMessById(@PathVariable("id") Integer id){
        return messMapper.getMessById(id);
+    @Resource
+    Leader_messMapper messMapper;
+    @RequestMapping("showLeaderMess")
+    public List<Leader_mess> getAllLeaderMess(@RequestParam("messTypeId")Integer messTypeId){
+        return messMapper.getAllLeaderMess(messTypeId);
     }
 
     @RequestMapping("/updateMess")

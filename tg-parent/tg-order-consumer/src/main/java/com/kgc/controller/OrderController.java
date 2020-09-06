@@ -34,16 +34,20 @@ public class OrderController {
 
     @PostMapping("/searchOrder")
     public List searchOrder(@RequestParam("userId")Integer userId) throws IOException {
+        //批量查询请求
         SearchRequest searchRequest = new SearchRequest("order_index");
         SearchSourceBuilder sourceBuilder=new SearchSourceBuilder();
+        //查询条件，精准查询
         TermQueryBuilder termQueryBuilder=new TermQueryBuilder("userId",userId);
         SearchSourceBuilder query = sourceBuilder.query(termQueryBuilder);
+        //分页
         query.from(0);
         query.size(3);
         searchRequest.source(query);
         SearchResponse search = client.search(searchRequest, RequestOptions.DEFAULT);
         SearchHit[] hits = search.getHits().getHits();
         ArrayList<Map> arrayList=new ArrayList<>();
+        //遍历数据存到集合中
         for (SearchHit hit : hits) {
             System.out.println(hit.getSourceAsMap());
             arrayList.add(hit.getSourceAsMap());

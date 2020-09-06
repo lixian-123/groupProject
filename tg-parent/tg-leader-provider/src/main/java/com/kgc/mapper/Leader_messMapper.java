@@ -5,7 +5,11 @@ import com.kgc.pojo.leader.Leader_mess;
 
 import java.util.List;
 import java.util.Map;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+@Mapper
 /**
  * 团长消息处理接口
  */

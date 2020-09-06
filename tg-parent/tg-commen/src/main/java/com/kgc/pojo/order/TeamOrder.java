@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 团购订单
  */
 public class TeamOrder implements Serializable {
-    private Integer teamId; //团购类型id
+    private Integer teamId; //团购id
     private Integer goodsId; //商品id
     private Integer leaderId; //团长id
     private Integer orderType; //订单类型

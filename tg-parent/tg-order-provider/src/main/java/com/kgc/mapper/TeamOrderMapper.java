@@ -15,6 +15,6 @@ public interface TeamOrderMapper {
     public int delete(@Param("teamId")Integer teamId);
     public int getVersion(@Param("teamId") Integer teamId);
     public int updateGoodsNum(Map<String,Object> map);
-    public TeamOrder getTeamOrder(@Param("startTime")String startTime,@Param("endTime")String endTime);//根据开始时间和结束时间得到订单
+    public TeamOrder getTeamOrder(@Param("teamId")Integer teamId);//根据开始时间和结束时间得到订单
 
 }

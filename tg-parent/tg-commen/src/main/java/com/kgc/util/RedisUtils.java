@@ -86,13 +86,16 @@ public class RedisUtils {
      * @return
      */
     public boolean exist(String key) {
-
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         //设置序列化Value的实例化对象
         redisTemplate.setValueSerializer(new StringRedisSerializer());
         ValueOperations<String, Object> vo = redisTemplate.opsForValue();
         Object value = vo.get(key);
         return EmptyUtils.isEmpty(value) ? false : true;
+    }
+    public boolean exists(String key) {
+
+       return redisTemplate.hasKey(key);
     }
 
     //setnx 加锁

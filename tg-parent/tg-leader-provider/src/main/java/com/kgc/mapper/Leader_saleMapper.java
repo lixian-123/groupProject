@@ -1,10 +1,12 @@
 package com.kgc.mapper;
 
 import com.kgc.pojo.leader.Leader_sale;
+import org.apache.ibatis.annotations.Mapper;
 
 
 import java.util.List;
 import java.util.Map;
+@Mapper
 
 /**
  * 团长销售数据处理接口
