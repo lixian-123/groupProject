@@ -2,30 +2,47 @@ package com.kgc.controller;
 
 import com.kgc.pojo.leader.Leader_sale;
 import com.kgc.service.LeaderSaleService;
+import com.kgc.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
 @RestController
+@CrossOrigin
 public class LeaderSaleController {
     @Autowired
     LeaderSaleService saleService;
-    @RequestMapping("showLeaderSale")
-    public List<Leader_sale> getAllSale(@RequestParam Map<String,Object> map){
-        return saleService.getAllSale(map);
+
+    @RequestMapping("/getSalePage")
+    public PageUtil getSalePage(Integer index, Integer size, Integer LeaderId){
+        return saleService.getSalePage(index, size, LeaderId);
     }
-    @RequestMapping("addLeaderSale")
-    public int add(@RequestBody Leader_sale leader_sale){
-        return saleService.add(leader_sale);
+
+    @RequestMapping("/addSale")
+    public int addSale(Leader_sale leader_sale){
+        return saleService.addSale(leader_sale);
     }
-    @RequestMapping("updateLeaderSale")
-    public int update(@RequestBody Leader_sale leader_sale){
-        return saleService.update(leader_sale);
+
+    @RequestMapping("/getSaleById")
+    public Leader_sale getSaleById(Integer id){
+        return saleService.getSaleById(id);
+    }
+
+    @RequestMapping("/updateSale")
+    public int updateSale(Leader_sale leader_sale){
+        return saleService.updateSale(leader_sale);
+    }
+
+    @RequestMapping("/getTichengToday")
+    public String getTichengToday(){
+        return saleService.getTichengToday();
+    }
+
+    @RequestMapping("/getTichengMonth")
+    public String getTichengMonth(){
+        return saleService.getTichengMonth();
     }
 
 }

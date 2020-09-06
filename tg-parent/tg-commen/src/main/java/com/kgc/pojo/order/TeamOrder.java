@@ -2,11 +2,10 @@ package com.kgc.pojo.order;
 
 
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.format.annotation.DateTimeFormat;
+
 
 import java.io.Serializable;
-import java.util.Date;
+
 
 /**
  * 团购订单

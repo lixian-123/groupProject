@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kgc.mapper.Leader_yongjinMapper">
-    <select id="getAllYongJin" resultType="com.kgc.pojo.leader.Leader_yongjin">
+    <select id="getYongJinByLeader" resultType="com.kgc.pojo.leader.Leader_yongjin">
         select * from Leader_yongjin where leaderId=#{leaderId}
     </select>
-    <insert id="add" parameterType="com.kgc.pojo.leader.Leader_yongjin">
+
+    <insert id="insertYongJin" parameterType="com.kgc.pojo.leader.Leader_yongjin">
         insert into Leader_yongjin values(null,#{leaderId},#{balance},#{Lastcharges})
     </insert>
-    <update id="update" parameterType="com.kgc.pojo.leader.Leader_yongjin">
+
+    <update id="updateYongJinByLeader" parameterType="com.kgc.pojo.leader.Leader_yongjin">
         update Leader_yongjin set leaderId=#{leaderId},balance=#{balance},Lastcharges=#{Lastcharges} where id=#{id}
     </update>
 </mapper>

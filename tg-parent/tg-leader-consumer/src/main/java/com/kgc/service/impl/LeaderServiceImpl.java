@@ -18,15 +18,14 @@ public class LeaderServiceImpl implements LeaderService {
     @Autowired
     TeamOrderFeign orderFeign;
 
-    @Override
     //添加团购信息
+    @Override
     public int addTeam(TeamOrder teamOrder) {
         return leaderFeign.addTeam(teamOrder);
     }
 
     @Override
     public boolean saveTeamRedis(TeamOrder teamOrder) {
-
         return redisFeign.saveTeamRedis(teamOrder);
     }
 
@@ -34,4 +33,5 @@ public class LeaderServiceImpl implements LeaderService {
     public TeamOrder getTeamOrder(String startTime, String endTime) {
         return orderFeign.getTeamOrder(startTime, endTime);
     }
+
 }

@@ -6,7 +6,13 @@ import com.kgc.pojo.goods.Goods;
 import com.kgc.pojo.order.TeamOrder;
 import com.kgc.util.PageUtil;
 import com.kgc.util.RedisUtils;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.common.xcontent.XContentType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,6 +26,10 @@ public class RestGoodsService {
     private GoodsMapper goodsMapper;
     @Autowired
     RedisUtils redisUtils;
+
+    @Autowired
+    @Qualifier("restHighLevelClient")
+    RestHighLevelClient client;
 
     @RequestMapping("/getGoodsPage")
     public PageUtil<Goods> getGoodsPage(@RequestParam Map<String ,Object> parma){
@@ -58,6 +68,20 @@ public class RestGoodsService {
         return num;
     }
 
+    //保存商品信息到es
+    @RequestMapping("/insertGoodsToEs")
+    public void insertGoodsToEs()throws Exception{
+        BulkRequest bulkRequest=new BulkRequest();
+        List<Goods> goodsList=goodsMapper.getAllGoods();
+        for (int i = 0; i < goodsList.size(); i++) {
+            bulkRequest.add(
+                    new IndexRequest("order_index")
+                            .id(""+i+1)
+                            .source(JSON.toJSONString(goodsList.get(i)), XContentType.JSON)
+            );
+            client.bulk(bulkRequest,RequestOptions.DEFAULT);
+        }
+    }
 }
 }
 

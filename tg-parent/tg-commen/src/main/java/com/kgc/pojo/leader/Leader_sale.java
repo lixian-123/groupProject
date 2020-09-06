@@ -9,24 +9,25 @@ public class Leader_sale implements Serializable {
     //业绩信息表id
     private Integer id;
     //团长id
-    private Integer leaderId;
-    //今日提成
-    private double ticheng;
-    //今日订单数
-    private Integer dingdan;
-    //今日销售额
-    private double salemoney;
-    //今日日期
-    private String todayTime;
+    private Integer LeaderId;
+    //提成
+    private double Ticheng;
+    //订单号
+    private Integer Dingdan;
+    //销售额
+    private double Salemoney;
+    private String data;
 
     public Leader_sale() {
     }
 
-    public Leader_sale(Integer id, double ticheng, Integer dingdan, double salemoney) {
+    public Leader_sale(Integer id, Integer leaderId, double ticheng, Integer Dingdan, double salemoney, String data) {
         this.id = id;
-        this.ticheng = ticheng;
-        this.dingdan = dingdan;
-        this.salemoney = salemoney;
+        LeaderId = leaderId;
+        Ticheng = ticheng;
+        this.Dingdan = Dingdan;
+        Salemoney = salemoney;
+        this.data = data;
     }
 
     public Integer getId() {
@@ -37,43 +38,43 @@ public class Leader_sale implements Serializable {
         this.id = id;
     }
 
-    public double getTicheng() {
-        return ticheng;
-    }
-
-    public void setTicheng(double ticheng) {
-        this.ticheng = ticheng;
-    }
-
-    public Integer getDingdan() {
-        return dingdan;
-    }
-
-    public void setDingdan(Integer dingdan) {
-        this.dingdan = dingdan;
-    }
-
-    public double getSalemoney() {
-        return salemoney;
-    }
-
-    public void setSalemoney(double salemoney) {
-        this.salemoney = salemoney;
-    }
-
     public Integer getLeaderId() {
-        return leaderId;
+        return LeaderId;
     }
 
     public void setLeaderId(Integer leaderId) {
-        this.leaderId = leaderId;
+        LeaderId = leaderId;
     }
 
-    public String getTodayTime() {
-        return todayTime;
+    public double getTicheng() {
+        return Ticheng;
     }
 
-    public void setTodayTime(String todayTime) {
-        this.todayTime = todayTime;
+    public void setTicheng(double ticheng) {
+        Ticheng = ticheng;
+    }
+
+    public Integer getDingdan() {
+        return Dingdan;
+    }
+
+    public void setDingdan(Integer Dingdan) {
+        this.Dingdan = Dingdan;
+    }
+
+    public double getSalemoney() {
+        return Salemoney;
+    }
+
+    public void setSalemoney(double salemoney) {
+        Salemoney = salemoney;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 }

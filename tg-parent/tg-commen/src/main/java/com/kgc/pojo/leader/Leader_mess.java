@@ -9,16 +9,23 @@ public class Leader_mess implements Serializable {
     //消息id
     private Integer id;
     //消息内容
-    private String mess;
+    private String content;
     //消息类型id
     private Integer messTypeId;
+    private String time;
+    private Integer MemberId;
+    private Integer LeaderId;
 
     public Leader_mess() {
     }
 
-    public Leader_mess(Integer id, String mess) {
+    public Leader_mess(Integer id, String content, Integer messTypeId, String time, Integer memberId, Integer leaderId) {
         this.id = id;
-        this.mess = mess;
+        this.content = content;
+        this.messTypeId = messTypeId;
+        this.time = time;
+        MemberId = memberId;
+        LeaderId = leaderId;
     }
 
     public Integer getId() {
@@ -29,12 +36,12 @@ public class Leader_mess implements Serializable {
         this.id = id;
     }
 
-    public String getMess() {
-        return mess;
+    public String getContent() {
+        return content;
     }
 
-    public void setMess(String mess) {
-        this.mess = mess;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public Integer getMessTypeId() {
@@ -43,5 +50,29 @@ public class Leader_mess implements Serializable {
 
     public void setMessTypeId(Integer messTypeId) {
         this.messTypeId = messTypeId;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public Integer getMemberId() {
+        return MemberId;
+    }
+
+    public void setMemberId(Integer memberId) {
+        MemberId = memberId;
+    }
+
+    public Integer getLeaderId() {
+        return LeaderId;
+    }
+
+    public void setLeaderId(Integer leaderId) {
+        LeaderId = leaderId;
     }
 }
