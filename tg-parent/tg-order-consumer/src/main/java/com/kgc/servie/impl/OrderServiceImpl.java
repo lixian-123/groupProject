@@ -1,13 +1,10 @@
 package com.kgc.servie.impl;
 
 import com.alibaba.fastjson.JSON;
-
 import com.kgc.config.RabbitConfig;
 import com.kgc.feign.GoodsFeign;
 import com.kgc.feign.MemberFeign;
 import com.kgc.feign.TeamOrderFeign;
-
-import com.kgc.pojo.order.TeamOrder;
 import com.kgc.pojo.user.Member;
 import com.kgc.servie.OrderService;
 import com.kgc.util.RedisUtils;
@@ -17,12 +14,8 @@ import com.kgc.vo.MqMessVo;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Semaphore;
@@ -106,4 +99,6 @@ public class OrderServiceImpl implements OrderService {
             permit.release();
         }
     }
+
+
 }

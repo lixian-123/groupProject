@@ -2,6 +2,7 @@ package com.kgc.Feign;
 
 import com.kgc.Feign.impl.LeaderFeignClientImpl;
 import com.kgc.pojo.user.Leader;
+import com.kgc.util.PageUtil;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +13,9 @@ import java.util.Map;
 
 @FeignClient(name = "tg-user-provider")
 public interface LeaderFeignClient {
+
+    @RequestMapping("/getLeaderPage")
+    public PageUtil<Leader> getLeaderPage(@RequestParam Map<String,Object> param);
 
     @RequestMapping("/leaderlogin")
     public Leader getleaderLogin(@RequestParam Map<String,Object> param);

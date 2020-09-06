@@ -10,6 +10,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 public class LeaderProviderAPP {
     public static void main(String[] args) {
-        SpringApplication.run(LeaderProviderAPP.class);
+        SpringApplication.run(LeaderProviderAPP.class,args);
     }
 }

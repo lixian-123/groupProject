@@ -11,6 +11,6 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableEurekaClient
 public class LeaderConsumerAPP {
     public static void main(String[] args) {
-        SpringApplication.run(LeaderConsumerAPP.class);
+        SpringApplication.run(LeaderConsumerAPP.class,args);
     }
 }

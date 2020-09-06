@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Leader_saleMapper">
+    <select id="getAllSale" resultType="com.kgc.pojo.leader.Leader_sale">
+        select * from Leader_sale where leaderId=#{leaderId} and todayTime=#{todayTime}
+    </select>
+    <update id="update" parameterType="com.kgc.pojo.leader.Leader_sale">
+        update Leader_sale set ticheng=#{ticheng},dingdan=#{dingdan},salemoney=#{salemoney},todayTime=#{todayTime}
+        where id=#{id}
+    </update>
+    <insert id="add" parameterType="com.kgc.pojo.leader.Leader_sale">
+        insert into Leader_sale values(null,#{leaderId},#{ticheng},#{dingdan},#{salemoney},now())
+    </insert>
+
+    <select id="getTichengToday" resultType="string">
+        SELECT SUM(Ticheng)  FROM leader_sale
+        WHERE TO_DAYS(DATA)=TO_DAYS(NOW());
+    </select>
+
+    <select id="getTichengMonth" resultType="string">
+        SELECT SUM(Ticheng) FROM leader_sale
+        WHERE DATE_FORMAT( DATA,'%Y%m') = DATE_FORMAT( CURDATE( ),'%Y%m')
+    </select>
+
+</mapper>

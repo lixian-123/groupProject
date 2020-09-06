@@ -14,7 +14,7 @@ import java.util.List;
 public class RestLeaderTiHuoService {
     @Autowired
     Leader_tihuoMapper tihuoMapper;
-    //查询团长的所有提货记录
+    //查询该团的所有提货记录
     @RequestMapping("/showLeaderTihuo")
     public List<Leader_tihuo> getAllTiHuo(@RequestParam("leaderId") Integer leaderId){
         return tihuoMapper.getAllTiHuo(leaderId);

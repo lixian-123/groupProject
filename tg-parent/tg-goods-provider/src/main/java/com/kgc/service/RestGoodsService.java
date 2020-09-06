@@ -28,7 +28,6 @@ public class RestGoodsService {
         page.setPageSize(Integer.parseInt(parma.get("size").toString()));
         page.setTotalCount(goodsMapper.getCount(parma));
         List<Goods> list=goodsMapper.getGoodByPage(parma);
-
         page.setList(goodsMapper.getGoodByPage(parma));
         page.setList(list);
         return page;
@@ -60,3 +59,5 @@ public class RestGoodsService {
     }
 
 }
+}
+
