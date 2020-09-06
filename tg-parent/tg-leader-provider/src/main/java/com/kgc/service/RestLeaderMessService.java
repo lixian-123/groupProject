@@ -20,8 +20,8 @@ public class RestLeaderMessService {
     private Leader_messMapper messMapper;
 
     @RequestMapping("/getMessPage")
-    public PageUtil<Leader_mess> getMessPage(@RequestParam Map<String,Object> map){
-        PageUtil page=new PageUtil();
+    public PageUtil<Leader_mess> getMessPage(@RequestParam Map<String, Object> map) {
+        PageUtil page = new PageUtil();
         page.setPageIndex(Integer.parseInt(map.get("index").toString()));
         page.setPageSize(Integer.parseInt(map.get("size").toString()));
         page.setList(messMapper.getAllMessPage(map));
@@ -30,32 +30,29 @@ public class RestLeaderMessService {
     }
 
     @RequestMapping("/insertMess")
-    public int insertMess(@RequestBody Leader_mess mess){
+    public int insertMess(@RequestBody Leader_mess mess) {
         return messMapper.addMess(mess);
     }
 
     @RequestMapping("/getMessById/{id}")
-    public Leader_mess getMessById(@PathVariable("id") Integer id){
-       return messMapper.getMessById(id);
-    @Resource
-    Leader_messMapper messMapper;
-    @RequestMapping("showLeaderMess")
-    public List<Leader_mess> getAllLeaderMess(@RequestParam("messTypeId")Integer messTypeId){
-        return messMapper.getAllLeaderMess(messTypeId);
+    public Leader_mess getMessById(@PathVariable("id") Integer id) {
+        return messMapper.getMessById(id);
     }
 
+
     @RequestMapping("/updateMess")
-    public int updateMess(@RequestBody Leader_mess mess){
+    public int updateMess (@RequestBody Leader_mess mess){
         return messMapper.updateMess(mess);
     }
 
     @RequestMapping("/delMess/{id}")
-    public int delMess(@PathVariable("id") Integer id){
+    public int delMess (@PathVariable("id") Integer id){
         return messMapper.delMess(id);
     }
 
     @RequestMapping("/getAllMess/{LeaderId}")
-    public List<Leader_mess> getAllMess(@PathVariable("LeaderId") Integer LeaderId){
+    public List<Leader_mess> getAllMess (@PathVariable("LeaderId") Integer LeaderId){
         return messMapper.getAllMess(LeaderId);
     }
 }
+
